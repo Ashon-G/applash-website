@@ -1,0 +1,15 @@
+export { default as Preloader } from './Preloader';
+export { default as Header } from './Header';
+export { default as BannerSection } from './BannerSection';
+export { default as TrustedSection } from './TrustedSection';
+export { default as WhySection } from './WhySection';
+export { default as AnalyzeSection } from './AnalyzeSection';
+export { default as CollaborateSection } from './CollaborateSection';
+export { default as CommunicationSection } from './CommunicationSection';
+export { default as AdvanceFeatureSection } from './AdvanceFeatureSection';
+export { default as IntegrationSection } from './IntegrationSection';
+export { default as PricingSection } from './PricingSection';
+export { default as FaqSection } from './FaqSection';
+export { default as FreeTrialSection } from './FreeTrialSection';
+export { default as NeedSection } from './NeedSection';
+export { default as Footer } from './Footer';
