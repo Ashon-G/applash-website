@@ -1,14 +1,13 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
 
-const Example = () => {
-  return (
-    <section className="grid place-content-center bg-neutral-900 p-12">
-      <FloatingPhone />
-    </section>
-  );
-};
-
+/**
+ * A floating phone mockup that matches the Applash brand.
+ * The component is exported directly so it can be used throughout the site
+ * without the wrapper example that originally shipped with the component.
+ */
 const FloatingPhone = () => {
   return (
     <div
@@ -16,7 +15,7 @@ const FloatingPhone = () => {
         transformStyle: "preserve-3d",
         transform: "rotateY(-30deg) rotateX(15deg)",
       }}
-      className="rounded-[24px] bg-violet-500"
+      className="rounded-[24px] bg-gradient-to-tr from-violet-600 to-indigo-600"
     >
       <motion.div
         initial={{
@@ -31,7 +30,7 @@ const FloatingPhone = () => {
           duration: 2,
           ease: "easeInOut",
         }}
-        className="relative h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]"
+        className="relative h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white/80 border-l-white/20 border-t-white/20 bg-neutral-900 p-1 pl-[3px] pt-[3px]"
       >
         <HeaderBar />
         <Screen />
@@ -55,33 +54,17 @@ const HeaderBar = () => {
 const Screen = () => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
-      {/* Example logo from logoispum */}
-      <svg
-        width="50"
-        height="39"
-        viewBox="0 0 50 39"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="fill-violet-500"
-      >
-        <path
-          d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z"
-          stopColor="#000000"
-        ></path>
-        <path
-          d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
-          stopColor="#000000"
-        ></path>
-      </svg>
+      <span className="mb-10 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-3xl font-bold text-transparent">
+        Applash
+      </span>
 
-      <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">
-        Get Started
+      <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border border-violet-600 bg-gradient-to-r from-violet-600 to-indigo-600 py-2 text-sm font-medium text-white backdrop-blur">
+        Start Converting
       </button>
 
-      {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" />
+      <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-gradient-to-tr from-violet-600 to-indigo-600" />
     </div>
   );
 };
 
-export default Example;
+export default FloatingPhone;

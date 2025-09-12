@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { MotionConfig, motion } from "framer-motion";
@@ -5,26 +7,27 @@ import { FiArrowRight } from "react-icons/fi";
 
 export const SpringCards = () => {
   return (
-    <section className="bg-white px-8 py-24">
+    <section className="bg-background px-8 py-24">
       <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
         <Card
-          title="Dynamic"
-          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem doloremque vitae minima."
+          title="Instant Builds"
+          subtitle="Drop in a URL and watch Applash craft a native app in moments."
+          className="bg-gradient-to-br from-violet-600 to-indigo-600 text-white"
         />
         <Card
-          title="Data Driven"
-          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem doloremque vitae minima."
-          className="bg-indigo-300 sm:-translate-y-6"
+          title="Native Power"
+          subtitle="Tap into camera, push and offline storage without touching Swift or Kotlin."
+          className="bg-gradient-to-bl from-violet-600 to-indigo-600 text-white sm:-translate-y-6"
         />
         <Card
-          title="Dutiful"
-          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem doloremque vitae minima."
-          className="bg-red-300"
+          title="Live Sync"
+          subtitle="Ship web updates that appear on phones the second you deploy."
+          className="bg-gradient-to-tr from-violet-600 to-indigo-600 text-white"
         />
         <Card
-          title="Demure"
-          subtitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem doloremque vitae minima."
-          className="bg-yellow-300 sm:-translate-y-6"
+          title="Store Ready"
+          subtitle="Generate icons, signing and screenshots for iOS and Android in one click."
+          className="bg-gradient-to-tl from-violet-600 to-indigo-600 text-white sm:-translate-y-6"
         />
       </div>
     </section>
@@ -50,7 +53,7 @@ const Card = ({
       <motion.div
         whileHover="hovered"
         className={twMerge(
-          "group w-full border-2 border-black bg-emerald-300",
+          "group w-full border-2 border-violet-700",
           className
         )}
       >
@@ -66,7 +69,7 @@ const Card = ({
             },
           }}
           className={twMerge(
-            "-m-0.5 border-2 border-black bg-emerald-300",
+            "-m-0.5 border-2 border-violet-700",
             className
           )}
         >
@@ -82,7 +85,7 @@ const Card = ({
               },
             }}
             className={twMerge(
-              "relative -m-0.5 flex h-72 flex-col justify-between overflow-hidden border-2 border-black bg-emerald-300 p-8",
+              "relative -m-0.5 flex h-72 flex-col justify-between overflow-hidden border-2 border-violet-700 p-8",
               className
             )}
           >
@@ -94,8 +97,8 @@ const Card = ({
               <p className="transition-[margin] duration-300 ease-in-out group-hover:mb-10">
                 {subtitle}
               </p>
-              <button className="absolute bottom-2 left-2 right-2 translate-y-full border-2 border-black bg-white px-4 py-2 text-black opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
-                LET'S GO
+              <button className="absolute bottom-2 left-2 right-2 translate-y-full border-2 border-violet-700 bg-white px-4 py-2 text-violet-700 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+                EXPLORE
               </button>
             </div>
 
@@ -127,10 +130,10 @@ const Card = ({
               <text>
                 <textPath
                   href="#circlePath"
-                  fill="black"
-                  className="fill-black text-2xl font-black uppercase opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+                  fill="white"
+                  className="fill-white text-2xl font-black uppercase opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
                 >
-                  LEARN MORE • LEARN MORE • LEARN MORE • LEARN MORE •
+                  APPLASH • APPLASH • APPLASH • APPLASH •
                 </textPath>
               </text>
             </motion.svg>

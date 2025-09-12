@@ -1,3 +1,5 @@
+"use client";
+
 import { Dispatch, SetStateAction, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
@@ -6,10 +8,12 @@ const AccordionSolutions = () => {
   const [open, setOpen] = useState(solutions[0].id);
   const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
   return (
-    <section className="px-8 py-12 bg-white">
+    <section className="px-8 py-12 bg-background">
       <div className="w-full max-w-5xl mx-auto grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px]">
         <div>
-          <h3 className="text-4xl font-bold mb-8">Solutions</h3>
+          <h3 className="mb-8 text-4xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+            Built for every team
+          </h3>
           <div className="flex flex-col gap-4">
             {solutions.map((q) => {
               return (
@@ -24,7 +28,7 @@ const AccordionSolutions = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             key={imgSrc}
-            className="bg-slate-300 rounded-2xl aspect-[4/3] lg:aspect-auto"
+            className="rounded-2xl bg-slate-300 aspect-[4/3] lg:aspect-auto"
             style={{
               backgroundImage: `url(${imgSrc})`,
               backgroundPosition: "center",
@@ -89,9 +93,9 @@ const Solution = ({
           animate={{
             opacity: isOpen ? 1 : 0,
           }}
-          className="-ml-6 -mr-6 -mb-6 mt-4 py-2 rounded-b-md flex items-center justify-center gap-1 group transition-[gap] bg-gradient-to-r from-violet-600 to-indigo-600 text-white"
+          className="-ml-6 -mr-6 -mb-6 mt-4 flex items-center justify-center gap-1 rounded-b-md bg-gradient-to-r from-violet-600 to-indigo-600 py-2 text-white transition-[gap] group"
         >
-          <span>Learn more</span>
+          <span>See how</span>
           <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
         </motion.button>
       </motion.div>
@@ -112,26 +116,26 @@ export default AccordionSolutions;
 const solutions = [
   {
     id: 1,
-    title: "Individuals",
+    title: "Indie Hackers",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium in iusto iure aliquam commodi possimus eaque sit recusandae incidunt?",
+      "Wrap your side project into a sleek mobile app and reach users on the go without wrestling with native tooling.",
     imgSrc:
-      "https://media2.giphy.com/media/SsTcO55LJDBsI/giphy.gif?cid=ecf05e47hfid50hu34mzkabzoy46hrftyl6g6656uygzmnpy&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://images.unsplash.com/photo-1559102877-4a2cc0e35ac1?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 2,
-    title: "Startups",
+    title: "Startup Teams",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium in iusto iure aliquam commodi possimus eaque sit recusandae incidunt?",
+      "Ship to iOS and Android from day one without hiring separate mobile teams or rewriting your stack.",
     imgSrc:
-      "https://media3.giphy.com/media/3oz8xR9wKr8TaazlQc/giphy.gif?cid=ecf05e47izzshtedbk9y9dv6f5yvdsbakp7tth2n58vsdd7p&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 3,
-    title: "Enterprise",
+    title: "Enterprises",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium in iusto iure aliquam commodi possimus eaque sit recusandae incidunt?",
+      "Reuse your existing web codebase and bring internal tools to the devices employees already carry.",
     imgSrc:
-      "https://media1.giphy.com/media/VkMV9TldsPd28/giphy.gif?cid=ecf05e478ipd21u861g034loyqpc66eseytcl7lzjbk1wqrh&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80",
   },
 ];
