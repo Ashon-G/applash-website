@@ -5,7 +5,7 @@ const Example = () => {
         height="450px"
         background="white"
         // NOTE: Using GIFs for the background looks super cool :)
-        imgUrl="/imgs/random/11.jpg"
+        imgUrl="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
       />
     </div>
   );
