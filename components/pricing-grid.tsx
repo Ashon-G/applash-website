@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Container } from "./container";
 import { IconCheck } from "@tabler/icons-react";
-import { CustomLink } from "./custom-link";
 import { Button } from "./button";
 import { cn } from "@/lib/utils";
 import Balancer from "react-wrap-balancer";
@@ -18,15 +17,9 @@ export const PricingGrid = () => {
       monthlyPrice: 0,
       yearlyPrice: 0,
       features: [
-        "Access to all tools for 14 days",
+        "Convert one web app to mobile",
         "No credit card required",
-        "Community Support",
-        <span key="access">
-          Access to{" "}
-          <CustomLink href="https://ui.aceternity.com">
-            Aceternity UI
-          </CustomLink>
-        </span>,
+        "Community support",
       ],
       onClick: () => {
         console.log("clicked");
@@ -40,21 +33,10 @@ export const PricingGrid = () => {
       yearlyPrice: 100,
       features: [
         "Everything in Hobby +",
-        "Access to Proactiv AI",
-        "Priority tools access",
-        <span key="access">
-          Support for{" "}
-          <CustomLink href="https://algochurn.com">Slack</CustomLink> and{" "}
-          <CustomLink href="https://twitter.com/mannupaaji">Twitter</CustomLink>
-        </span>,
+        "Push notifications",
+        "App Store and Play Store builds",
         "Priority support",
-        "99.67% Uptime SLA",
-        <span key="access">
-          Access to{" "}
-          <CustomLink href="https://ui.aceternity.com/templates">
-            Aceternity UI Templates
-          </CustomLink>
-        </span>,
+        "99.9% uptime SLA",
       ],
       onClick: () => {
         console.log("clicked");
@@ -67,21 +49,11 @@ export const PricingGrid = () => {
       monthlyPrice: 30,
       yearlyPrice: 150,
       features: [
-        "Everything in Starter + ",
-        "Access to our dev team",
-        "Coffee with the CEO",
-        <span key="access">
-          Access to{" "}
-          <CustomLink href="https://ui.aceternity.com">
-            Aceternity UI
-          </CustomLink>
-        </span>,
-        "Request tools",
+        "Everything in Starter +",
         "Advanced analytics",
-        "Customizable dashboards",
+        "Unlimited push notifications",
         "24/7 customer support",
-        "Unlimited data storage",
-        "Enhanced security features",
+        "Enhanced security",
       ],
       featured: true,
       onClick: () => {
@@ -95,11 +67,11 @@ export const PricingGrid = () => {
       monthlyPrice: 0,
       yearlyPrice: 0,
       features: [
-        "Everything in Pro + ",
-        "HIPAA and SOC2 compliance",
-        "Bulk email support",
-        "Customizable dashboards",
-        "24/7 customer support",
+        "Everything in Pro +",
+        "Custom integrations",
+        "Dedicated account manager",
+        "SLA & compliance support",
+        "24/7 priority support",
       ],
       onClick: () => {
         console.log("clicked");

@@ -18,9 +18,9 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconMailForward className="h-8 w-8 text-secondary" />,
-      title: "Email Automation",
+      title: "Instant packaging",
       description:
-        "With our best in class email automation, you can automate your entire emailing process.",
+        "Drop in your web app URL and Applash wraps it into installable mobile apps in minutes.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -35,9 +35,9 @@ export const Tools = () => {
     },
     {
       icon: <IconSocial className="h-8 w-8 text-secondary" />,
-      title: "Cross Platform Marketing",
+      title: "Push notification dashboard",
       description:
-        "With our cross platform marketing, you can reach your audience on all the platforms they use.",
+        "Send targeted push notifications and in-app messages without touching native code.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -52,9 +52,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Managed CRM",
+      title: "Built-in analytics",
       description:
-        "With our managed CRM, you can manage your leads and contacts in one place.",
+        "Track installs, sessions and engagement for every mobile build right from your Applash dashboard.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -69,9 +69,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Apps Automation",
+      title: "Automated updates",
       description:
-        "We have cloned zapier and built our very own apps automation platform.",
+        "Ship fixes and new features to your mobile users the moment you deploy to the web.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -128,9 +128,9 @@ export const Tools = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconTool className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="mt-4">Perfect set of tools</Heading>
+        <Heading className="mt-4">All the tools to manage your mobile apps</Heading>
         <Subheading>
-          Proactiv comes with perfect tools for the perfect jobs out there.
+          Applash provides a full toolkit for packaging, publishing and growing your mobile presence.
         </Subheading>
       </div>
       <StickyScroll content={content} />

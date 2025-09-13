@@ -48,11 +48,11 @@ export const Hero = () => {
           as="h1"
           className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10  py-6"
         >
-          Transform Your Marketing with Proactiv
+          Convert Web Apps to Mobile with Applash
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10">
-          Automate Campaigns, Engage Audiences, and Boost Lead Generation with
-          Our All-in-One Marketing Solution
+          Applash instantly turns your web application into native iOS and Android apps.
+          Reach more users, send push notifications, and publish updates from a single codebase.
         </Subheading>
         <FeaturedImages
           textClassName="lg:text-left text-center"
@@ -61,7 +61,7 @@ export const Hero = () => {
         />
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
           <Button className="flex space-x-2 items-center group !text-lg">
-            <span>Book a demo</span>{" "}
+            <span>Get started free</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </Button>
         </div>

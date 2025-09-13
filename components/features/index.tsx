@@ -24,18 +24,16 @@ export const Features = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Automate your social media</Heading>
+        <Heading className="pt-4">Launch mobile apps from your web app</Heading>
         <Subheading>
-          Proactiv houses a rich set of features to automate your marketing
-          efforts across all social medias
+          Applash includes everything you need to convert your existing web application into polished iOS and Android apps.
         </Subheading>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
           <Card className="lg:col-span-2">
-            <CardTitle>Add multiple websites in the same app</CardTitle>
+            <CardTitle>One codebase, multiple platforms</CardTitle>
             <CardDescription>
-              With our AI-powered platform, you can post to multiple platforms
-              at once, saving you time and effort.
+              Manage your web app in one place and Applash packages it into native iOS and Android apps automatically.
             </CardDescription>
             <CardSkeletonContainer>
               <SkeletonOne />
@@ -45,19 +43,18 @@ export const Features = () => {
             <CardSkeletonContainer className="max-w-[16rem] mx-auto">
               <SkeletonTwo />
             </CardSkeletonContainer>
-            <CardTitle>Analytics for everything</CardTitle>
+            <CardTitle>Native device access</CardTitle>
             <CardDescription>
-              Check analytics, track your posts, and get insights into your
-              audience.
+              Tap into camera, geolocation, file storage and more using simple web APIs.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonThree />
             </CardSkeletonContainer>
-            <CardTitle>Publish Anywhere</CardTitle>
+            <CardTitle>Offline support</CardTitle>
             <CardDescription>
-              Proactiv uses AI to help you create engaging content.
+              Give users a seamless experience even without an internet connection.
             </CardDescription>
           </Card>
           <Card>
@@ -67,19 +64,18 @@ export const Features = () => {
             >
               <SkeletonFour />
             </CardSkeletonContainer>
-            <CardTitle>Native Features</CardTitle>
+            <CardTitle>Push notifications</CardTitle>
             <CardDescription>
-              Proactive can integrate with Zapier, Slack and every other popular
-              integration tools.
+              Engage your audience with real‑time push notifications and in‑app messages.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonFive />
             </CardSkeletonContainer>
-            <CardTitle>Know your audience</CardTitle>
+            <CardTitle>App Store ready</CardTitle>
             <CardDescription>
-              Based on your audience, create funnels and drive more traffic.
+              Generate signed builds for the Apple App Store and Google Play in minutes.
             </CardDescription>
           </Card>
         </div>
