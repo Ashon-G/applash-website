@@ -6,63 +6,63 @@ import { Heading } from "./heading";
 const questions = [
   {
     id: 1,
-    title: "What is Proactic?",
+    title: "What is Applash?",
     description:
-      "Proactic is a social media marketing automation tool designed to help businesses streamline their social media efforts.",
+      "Applash is a platform that converts your existing web application into fully featured iOS and Android apps.",
   },
   {
     id: 2,
-    title: "How does Proactic work?",
+    title: "How does Applash convert my web app to mobile?",
     description:
-      "Proactic automates the process of scheduling, posting, and analyzing social media content across multiple platforms.",
+      "Applash wraps your web app in a native container and generates installable packages without requiring additional code.",
   },
   {
     id: 3,
-    title: "Which social media platforms does Proactic support?",
+    title: "Which platforms are supported?",
     description:
-      "Proactic supports popular social media platforms such as Facebook, Twitter, Instagram, LinkedIn, and more.",
+      "Applash builds native apps for both the Apple App Store and Google Play Store.",
   },
   {
     id: 4,
-    title: "Can I schedule posts in advance with Proactic?",
+    title: "Do I need to maintain separate codebases?",
     description:
-      "Yes, Proactic allows you to schedule posts in advance, ensuring your content is published at the optimal times.",
+      "No. Keep your web code as the single source of truth and Applash handles the mobile builds for you.",
   },
   {
     id: 5,
-    title: "Does Proactic provide analytics?",
+    title: "Can I send push notifications?",
     description:
-      "Proactic offers detailed analytics to help you track the performance of your social media campaigns and make data-driven decisions.",
+      "Yes, Applash includes built-in push notification support to engage your users.",
   },
   {
     id: 6,
-    title: "Is Proactic suitable for small businesses?",
+    title: "Does Applash work offline?",
     description:
-      "Yes, Proactic is designed to be user-friendly and scalable, making it suitable for businesses of all sizes.",
+      "Applash adds offline caching so your app remains usable even without an internet connection.",
   },
   {
     id: 7,
-    title: "Can I collaborate with my team on Proactic?",
+    title: "How are updates handled?",
     description:
-      "Proactic includes collaboration features that allow team members to work together on social media campaigns.",
+      "Deploy updates to your web app and Applash automatically delivers them to your mobile users.",
   },
   {
     id: 8,
-    title: "Does Proactic offer customer support?",
+    title: "Is there a free trial?",
     description:
-      "Yes, Proactic provides customer support to assist you with any questions or issues you may encounter.",
+      "Yes, you can try Applash for free and generate your first mobile build in minutes.",
   },
   {
     id: 9,
-    title: "Is there a free trial available for Proactic?",
+    title: "How can I track user analytics?",
     description:
-      "Proactic offers a free trial so you can explore its features and see how it can benefit your social media marketing efforts.",
+      "Applash provides in-app analytics to monitor installs, sessions, and engagement.",
   },
   {
     id: 10,
-    title: "How can I get started with Proactic?",
+    title: "How do I get started?",
     description:
-      "To get started with Proactic, simply sign up on our website and follow the onboarding process to set up your account.",
+      "Sign up on our website and upload your web app URL to create your first mobile app with Applash.",
   },
 ];
 
