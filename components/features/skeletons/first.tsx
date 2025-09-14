@@ -1,15 +1,7 @@
 "use client";
 import { motion } from "motion/react";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  MetaIcon,
-  SlackIcon,
-  TiktokIcon,
-  TwitterIcon,
-} from "@/components/icons/illustrations";
 import React from "react";
+import Image from "next/image";
 import { IconContainer } from "../icon-container";
 
 export const SkeletonOne = () => {
@@ -109,48 +101,132 @@ export const SkeletonOne = () => {
           </svg>
 
           <IconContainer>
-            <InstagramIcon />
+            <Image
+              src="/icons/1.png"
+              alt="icon 1"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <TiktokIcon />
+            <Image
+              src="/icons/2.png"
+              alt="icon 2"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <TwitterIcon />
+            <Image
+              src="/icons/3.png"
+              alt="icon 3"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <FacebookIcon />
+            <Image
+              src="/icons/4.png"
+              alt="icon 4"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <MetaIcon />
+            <Image
+              src="/icons/5.png"
+              alt="icon 5"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <LinkedInIcon />
+            <Image
+              src="/icons/6.png"
+              alt="icon 6"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <SlackIcon />
+            <Image
+              src="/icons/1.png"
+              alt="icon 1"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
         </div>
         <div className="flex gap-4 items-center justify-center flex-shrink-0 ml-8">
           <IconContainer>
-            <MetaIcon />
+            <Image
+              src="/icons/4.png"
+              alt="icon 4"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <LinkedInIcon />
+            <Image
+              src="/icons/5.png"
+              alt="icon 5"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <SlackIcon />
+            <Image
+              src="/icons/6.png"
+              alt="icon 6"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <InstagramIcon />
+            <Image
+              src="/icons/1.png"
+              alt="icon 1"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <TiktokIcon />
+            <Image
+              src="/icons/2.png"
+              alt="icon 2"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <TwitterIcon />
+            <Image
+              src="/icons/3.png"
+              alt="icon 3"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
           <IconContainer>
-            <FacebookIcon />
+            <Image
+              src="/icons/4.png"
+              alt="icon 4"
+              width={32}
+              height={32}
+              className="h-full w-full object-contain"
+            />
           </IconContainer>
         </div>
       </div>
