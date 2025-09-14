@@ -31,9 +31,9 @@ export const Features = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
           <Card className="lg:col-span-2">
-            <CardTitle>One codebase, multiple platforms</CardTitle>
+            <CardTitle>Push Notifications</CardTitle>
             <CardDescription>
-              Manage your web app in one place and Applash packages it into native iOS and Android apps automatically.
+              Engage your audience with real‑time push notifications and in‑app messages.
             </CardDescription>
             <CardSkeletonContainer>
               <SkeletonOne />
@@ -52,9 +52,9 @@ export const Features = () => {
             <CardSkeletonContainer>
               <SkeletonThree />
             </CardSkeletonContainer>
-            <CardTitle>Offline support</CardTitle>
+            <CardTitle>Auto App Submission</CardTitle>
             <CardDescription>
-              Give users a seamless experience even without an internet connection.
+              Generate signed builds for the Apple App Store and Google Play in minutes..
             </CardDescription>
           </Card>
           <Card>
@@ -64,9 +64,9 @@ export const Features = () => {
             >
               <SkeletonFour />
             </CardSkeletonContainer>
-            <CardTitle>Push notifications</CardTitle>
+            <CardTitle>Native Features</CardTitle>
             <CardDescription>
-              Engage your audience with real‑time push notifications and in‑app messages.
+              Tap into camera, geolocation, and microphone with 1-click.
             </CardDescription>
           </Card>
           <Card>
