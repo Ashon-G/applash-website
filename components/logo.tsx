@@ -11,9 +11,9 @@ export const Logo = () => {
       <Image
         src="/logo-applash.png"
         alt="Applash logo"
-        width={35}
-        height={35}
-        className="h-6 w-6"
+        width={1024}
+        height={247}
+        className="h-8 w-auto"
       />
     </Link>
   );
