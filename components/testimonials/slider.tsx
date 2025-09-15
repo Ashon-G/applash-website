@@ -79,10 +79,10 @@ export const TestimonialsSlider = () => {
                   <Transition
                     key={index}
                     show={active === index}
-                    enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                    enter="transition [transition-timing-function:cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
                     enterFrom="opacity-0 -rotate-[60deg]"
                     enterTo="opacity-100 rotate-0"
-                    leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700"
+                    leave="transition [transition-timing-function:cubic-bezier(0.68,-0.3,0.32,1)] duration-700"
                     leaveFrom="opacity-100 rotate-0"
                     leaveTo="opacity-0 rotate-[60deg]"
                     beforeEnter={() => heightFix()}
