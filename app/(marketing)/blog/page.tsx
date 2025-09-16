@@ -12,11 +12,11 @@ import { truncate } from "@/lib/utils";
 import { format } from "date-fns";
 
 export const metadata: Metadata = {
-  title: "Blog | Proactiv | Aceternity Templates",
+  title: "Blog | Applash",
   description:
-    "Everything AI is a platform that provides a wide range of AI tools and services to help you stay on top of your business. Generate images, text and everything else that you need to get your business off the ground.",
+    "Guides, stories, and release notes on converting your web app into native mobile experiences with Applash.",
   openGraph: {
-    images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
+    images: ["/banner.png"],
   },
 };
 
@@ -34,8 +34,8 @@ export default async function ArticlesIndex() {
             Blog
           </Heading>
           <Subheading className="text-center">
-            Discover insightful resources and expert advice from our seasoned
-            team to elevate your knowledge.
+            Discover how teams ship iOS and Android apps from their existing
+            web codebase, plus the latest Applash product updates.
           </Subheading>
         </div>
 

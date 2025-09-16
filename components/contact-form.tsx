@@ -18,21 +18,21 @@ export const ContactForm = () => {
         </div>
         <Heading className="text-left">Contact us</Heading>
         <Subheading className="text-left text-neutral-400">
-          We are always looking for ways to improve our products and services.
-          Contact us and let us know how we can help you.
+          Tell us about your web app and we&apos;ll help you launch it on the Apple
+          App Store and Google Play with Applash.
         </Subheading>
 
         <div className="text-sm mt-10">
           <p className="text-sm text-neutral-200">Email</p>
-          <p className="text-sm text-neutral-400">contact@proactiv.ai</p>
+          <p className="text-sm text-neutral-400">hello@applash.com</p>
         </div>
         <div className="text-sm mt-4">
           <p className="text-sm text-neutral-200">Phone</p>
-          <p className="text-sm text-neutral-400">+1 (800) 123 XX21</p>
+          <p className="text-sm text-neutral-400">+1 (415) 555-0199</p>
         </div>
         <div className="text-sm mt-4">
           <p className="text-sm text-neutral-200">Support</p>
-          <p className="text-sm text-neutral-400">support@proactiv.ai</p>
+          <p className="text-sm text-neutral-400">support@applash.com</p>
         </div>
       </div>
       <div className="flex flex-col items-start gap-4 max-w-2xl w-full mx-auto bg-gradient-to-b from-neutral-900 to-neutral-950 p-10 rounded-3xl relative overflow-hidden">
@@ -61,7 +61,7 @@ export const ContactForm = () => {
           <input
             id="email"
             type="email"
-            placeholder="contact@aceternity.com"
+            placeholder="you@company.com"
             className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
           />
         </div>
@@ -75,7 +75,7 @@ export const ContactForm = () => {
           <input
             id="company"
             type="text"
-            placeholder="contact@aceternity.com"
+            placeholder="Your company"
             className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
           />
         </div>

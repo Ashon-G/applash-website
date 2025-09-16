@@ -7,15 +7,15 @@ import { Tools } from "@/components/tools";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Features | Proactiv | Aceternity Templates",
+  title: "Features | Applash",
   description:
-    "Proactiv is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
+    "Explore the Applash toolkit for turning your web application into polished iOS and Android apps with native integrations, push notifications, and analytics.",
   openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
+    images: ["/banner.png"],
   },
 };
 
-export default function PricingPage() {
+export default function FeaturesPage() {
   return (
     <div className="relative overflow-hidden">
       <AmbientColor />

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Applash creates beautiful native mobile apps from your web app url for FREE",
   openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
+    images: ["/banner.png"],
   },
 };
 

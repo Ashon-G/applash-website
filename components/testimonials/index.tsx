@@ -5,9 +5,6 @@ import { FeatureIconContainer } from "../features/feature-icon-container";
 import { Heading } from "../heading";
 import { Subheading } from "../subheading";
 import { TbLocationBolt } from "react-icons/tb";
-import { cn } from "@/lib/utils";
-import { testimonials } from "@/constants/page-testimonials";
-import Image from "next/image";
 import { TestimonialsGrid } from "./grid";
 import { AmbientColor } from "../ambient-color";
 
@@ -19,9 +16,10 @@ export const Testimonials = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <TbLocationBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Used by entreprenurs</Heading>
+        <Heading className="pt-4">Trusted by founders and product teams</Heading>
         <Subheading>
-          Proactiv is used by serial entrepreneurs and overachievers.
+          Applash powers serial entrepreneurs and ambitious teams shipping
+          native apps from their web experience.
         </Subheading>
       </div>
 
