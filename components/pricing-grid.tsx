@@ -1,21 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "./container";
 import { IconCheck } from "@tabler/icons-react";
 import { Button } from "./button";
 import { cn } from "@/lib/utils";
 import Balancer from "react-wrap-balancer";
 import Beam from "./beam";
-import { Switch } from "./switch";
 import { Clients } from "./clients";
 
 export const PricingGrid = () => {
   const tiers = [
     {
-      title: "Hobby",
-      description: "For individuals trying out the product",
-      monthlyPrice: 0,
-      yearlyPrice: 0,
+      title: "Start",
+      description: "Try Applash with your first conversion",
+      priceText: "$0 to start",
       features: [
         "Convert one web app to mobile",
         "No credit card required",
@@ -27,12 +25,11 @@ export const PricingGrid = () => {
       ctaText: "Get Started",
     },
     {
-      title: "Starter",
-      description: "For serious founders",
-      monthlyPrice: 20,
-      yearlyPrice: 100,
+      title: "Per Build",
+      description: "Only pay when you need a new release",
+      priceText: "$99 per build",
       features: [
-        "Everything in Hobby +",
+        "Everything in Start +",
         "Push notifications",
         "App Store and Play Store builds",
         "Priority support",
@@ -44,12 +41,11 @@ export const PricingGrid = () => {
       ctaText: "Get Started",
     },
     {
-      title: "Pro",
-      description: "For small to large businesses",
-      monthlyPrice: 30,
-      yearlyPrice: 150,
+      title: "Unlimited",
+      description: "Ship mobile updates whenever you need",
+      priceText: "$599/mo for unlimited builds",
       features: [
-        "Everything in Starter +",
+        "Everything in Per Build +",
         "Advanced analytics",
         "Unlimited push notifications",
         "24/7 customer support",
@@ -62,29 +58,24 @@ export const PricingGrid = () => {
       ctaText: "Get Started",
     },
     {
-      title: "Enterprise",
-      description: "For large scale businesses",
-      monthlyPrice: 0,
-      yearlyPrice: 0,
+      title: "Agencies",
+      description: "Dedicated support and pricing for agency partners",
+      priceText: "Special pricing",
       features: [
-        "Everything in Pro +",
+        "Everything in Unlimited +",
         "Custom integrations",
         "Dedicated account manager",
         "SLA & compliance support",
-        "24/7 priority support",
+        "Contact us for agency pricing",
       ],
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "Book a demo",
+      ctaText: "Contact us",
     },
   ];
-  const [checked, setChecked] = useState(false);
   return (
     <div>
-      <div className="flex justify-center">
-        <Switch checked={checked} setChecked={setChecked} />
-      </div>
       <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4 py-20">
         {tiers.map((tier, index) => (
           <div
@@ -98,13 +89,7 @@ export const PricingGrid = () => {
             {tier.featured && <Beam showBeam className="top-0 block" />}
             <div>
               <h3 className="text-base font-normal">{tier.title}</h3>
-              <p className="text-lg text-neutral-400 mt-4 font-medium">
-                {tier.title === "Enterprise"
-                  ? "Custom"
-                  : `$${checked ? tier.yearlyPrice : tier.monthlyPrice} / ${
-                      checked ? "year" : "month"
-                    }`}
-              </p>
+              <p className="text-lg text-neutral-400 mt-4 font-medium">{tier.priceText}</p>
               <p className="text-sm text-neutral-4000 mt-4">
                 {tier.description}
               </p>
