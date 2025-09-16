@@ -117,7 +117,7 @@ export const Lid = ({ src }: { src?: string }) => {
         >
           <Image
             src={src as string}
-            alt="aceternity logo"
+            alt="Applash icon"
             fill
             className="object-cover object-left-top rounded-lg inset-0 h-full w-full"
           />

@@ -23,7 +23,7 @@ export const Register = () => {
     <Container className="h-screen max-w-lg mx-auto flex flex-col items-center justify-center">
       <Logo />
       <h1 className="text-xl md:text-4xl font-bold my-4">
-        Welcome to Proactiv
+        Welcome to Applash
       </h1>
 
       <div className="flex flex-col sm:flex-row gap-4 w-full">
@@ -50,7 +50,7 @@ export const Register = () => {
           marginBottom: isClicked ? "10px" : "0px",
         }}
         type="email"
-        placeholder="contact@aceternity.com"
+        placeholder="you@company.com"
         className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
       />
       <Button

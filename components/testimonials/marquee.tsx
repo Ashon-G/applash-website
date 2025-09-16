@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { AmbientColor } from "../ambient-color";
 import { FeatureIconContainer } from "../features/feature-icon-container";
 import { TbLocationBolt } from "react-icons/tb";
 import { Heading } from "../heading";
@@ -17,9 +16,10 @@ export const TestimonialsMarquee = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <TbLocationBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Used by entreprenurs</Heading>
+        <Heading className="pt-4">Trusted by founders and product teams</Heading>
         <Subheading>
-          Proactiv is used by serial entrepreneurs and overachievers.
+          Applash powers serial entrepreneurs and ambitious teams shipping
+          native apps from their web experience.
         </Subheading>
       </div>
 
@@ -33,7 +33,7 @@ export const TestimonialsMarquee = () => {
               <div className="flex gap-2 items-center mt-8">
                 <Image
                   src={testimonial.src}
-                  alt="Manu Arora"
+                  alt={testimonial.name}
                   width={40}
                   height={40}
                   className="rounded-full"
@@ -62,7 +62,7 @@ export const TestimonialsMarquee = () => {
               <div className="flex gap-2 items-center mt-8">
                 <Image
                   src={testimonial.src}
-                  alt="Manu Arora"
+                  alt={testimonial.name}
                   width={40}
                   height={40}
                   className="rounded-full"

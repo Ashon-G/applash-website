@@ -2,7 +2,6 @@ import { AmbientColor } from "@/components/ambient-color";
 import { CTA } from "@/components/cta";
 import { FeatureIconContainer } from "@/components/features/feature-icon-container";
 import { Heading } from "@/components/heading";
-import { Hero } from "@/components/hero";
 import { PricingGrid } from "@/components/pricing-grid";
 import { Subheading } from "@/components/subheading";
 import { Testimonials } from "@/components/testimonials";
@@ -11,11 +10,11 @@ import { IconReceiptFilled } from "@tabler/icons-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing | Proactiv | Aceternity Templates",
+  title: "Pricing | Applash",
   description:
-    "Proactiv is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
+    "Choose the Applash plan that helps you ship native iOS and Android apps from your existing web experience without rebuilding anything.",
   openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
+    images: ["/banner.png"],
   },
 };
 
@@ -31,8 +30,8 @@ export default function PricingPage() {
           Simple pricing
         </Heading>
         <Subheading>
-          Simple pricing for startups, small businesses, medium scale businesses
-          and enterprises.
+          Transparent pricing for startups, growing products, and enterprises
+          shipping their web apps as native mobile experiences with Applash.
         </Subheading>
         <PricingGrid />
       </div>
