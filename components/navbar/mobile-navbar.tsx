@@ -84,8 +84,8 @@ export const MobileNavbar = ({ navItems }: any) => {
             <Button>Book a demo</Button>
             <Button
               variant="simple"
-              as={Link}
-              href="/register"
+              as="a"
+              href="https://applash.online"
               onClick={() => {
                 setOpen(false);
               }}

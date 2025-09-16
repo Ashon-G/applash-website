@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "motion/react";
-import { useRouter } from "next/navigation";
 import { Button } from "./button";
 import { HiArrowRight } from "react-icons/hi2";
 import Image from "next/image";
@@ -13,8 +12,6 @@ import { FeaturedImages } from "./featured-images";
 import Beam from "./beam";
 import { ArcadeEmbed } from "./arcade";
 export const Hero = () => {
-  const router = useRouter();
-
   const containerRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -61,7 +58,11 @@ export const Hero = () => {
           showStars
         />
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
-          <Button className="flex space-x-2 items-center group !text-lg">
+          <Button
+            className="flex space-x-2 items-center group !text-lg"
+            as="a"
+            href="https://applash.online"
+          >
             <span>Get started free</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </Button>

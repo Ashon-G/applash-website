@@ -19,9 +19,7 @@ export const PricingGrid = () => {
         "No credit card required",
         "Community support",
       ],
-      onClick: () => {
-        console.log("clicked");
-      },
+      href: "https://applash.online",
       ctaText: "Get Started",
     },
     {
@@ -35,9 +33,7 @@ export const PricingGrid = () => {
         "Priority support",
         "99.9% uptime SLA",
       ],
-      onClick: () => {
-        console.log("clicked");
-      },
+      href: "https://applash.online",
       ctaText: "Get Started",
     },
     {
@@ -52,9 +48,7 @@ export const PricingGrid = () => {
         "Enhanced security",
       ],
       featured: true,
-      onClick: () => {
-        console.log("clicked");
-      },
+      href: "https://applash.online",
       ctaText: "Get Started",
     },
     {
@@ -68,9 +62,7 @@ export const PricingGrid = () => {
         "SLA & compliance support",
         "Contact us for agency pricing",
       ],
-      onClick: () => {
-        console.log("clicked");
-      },
+      href: "https://applash.online",
       ctaText: "Contact us",
     },
   ];
@@ -101,7 +93,8 @@ export const PricingGrid = () => {
             </div>
             <Button
               variant={tier.featured ? "primary" : "muted"}
-              onClick={tier.onClick}
+              as="a"
+              href={tier.href}
               className="mt-4"
             >
               {tier.ctaText}

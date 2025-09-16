@@ -28,7 +28,11 @@ export const CTA = () => {
             showStars
           />
         </div>
-        <Button className="flex space-x-2 items-center group !text-lg">
+        <Button
+          className="flex space-x-2 items-center group !text-lg"
+          as="a"
+          href="https://applash.online"
+        >
           <span>Try Applash free</span>
           <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
         </Button>
