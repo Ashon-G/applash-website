@@ -2,6 +2,7 @@ import { AmbientColor } from "@/components/ambient-color";
 import { CTA } from "@/components/cta";
 import { Features } from "@/components/features";
 import { FeaturesGrid } from "@/components/features/features-grid";
+import { SpeedHighlights } from "@/components/features/speed-highlights";
 import { Testimonials } from "@/components/testimonials";
 import { Tools } from "@/components/tools";
 import { Metadata } from "next";
@@ -22,6 +23,7 @@ export default function FeaturesPage() {
       <Tools />
       <Features />
       <FeaturesGrid />
+      <SpeedHighlights />
 
       <div className="pb-40">
         <Testimonials />
