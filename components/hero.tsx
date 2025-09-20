@@ -67,7 +67,12 @@ export const Hero = () => {
           </Button>
         </div>
       </Container>
-      <div className="flex  items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20">
+      <div className="flex flex-col items-center justify-center relative p-2 md:px-20 md:pt-20 cursor-pointer md:-mt-20 gap-10">
+        <div className="w-full max-w-6xl">
+          <div className="relative h-[22rem] md:h-[32rem] overflow-hidden rounded-[30px] border-4 border-neutral-900 bg-charcoal shadow-2xl">
+            <SplineHeroModel />
+          </div>
+        </div>
         <div
           className="w-full relative"
           style={{
@@ -75,13 +80,8 @@ export const Hero = () => {
           }}
         >
           <Card rotate={rotate} translate={translate} scale={scale}>
-            <div className="flex h-full w-full flex-col gap-6">
-              <div className="relative w-full flex-1 min-h-[16rem] md:min-h-[22rem] overflow-hidden rounded-2xl">
-                <SplineHeroModel />
-              </div>
-              <div className="relative w-full flex-1 overflow-hidden rounded-2xl">
-                <ArcadeEmbed />
-              </div>
+            <div className="relative h-full w-full overflow-hidden rounded-2xl">
+              <ArcadeEmbed />
             </div>
           </Card>
         </div>
