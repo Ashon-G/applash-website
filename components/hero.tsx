@@ -9,6 +9,7 @@ import { Subheading } from "./subheading";
 import { FeaturedImages } from "./featured-images";
 import Beam from "./beam";
 import { SplineHeroModel } from "./spline-hero-model";
+import { ArcadeEmbed } from "./arcade";
 export const Hero = () => {
   const containerRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
@@ -74,7 +75,14 @@ export const Hero = () => {
           }}
         >
           <Card rotate={rotate} translate={translate} scale={scale}>
-            <SplineHeroModel />
+            <div className="flex h-full w-full flex-col gap-6">
+              <div className="relative w-full flex-1 min-h-[16rem] md:min-h-[22rem] overflow-hidden rounded-2xl">
+                <SplineHeroModel />
+              </div>
+              <div className="relative w-full flex-1 overflow-hidden rounded-2xl">
+                <ArcadeEmbed />
+              </div>
+            </div>
           </Card>
         </div>
       </div>
@@ -102,7 +110,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[20rem] md:h-[50rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
+      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[36rem] md:h-[50rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
     >
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
