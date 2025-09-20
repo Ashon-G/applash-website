@@ -40,7 +40,11 @@ export const Hero = () => {
       ref={containerRef}
       className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
     >
-      <Container className="flex  flex-col items-center justify-center">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <SplineHeroModel />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/40 to-charcoal/90" />
+      </div>
+      <Container className="relative z-10 flex flex-col items-center justify-center">
         <Heading
           as="h1"
           className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10  py-6"
@@ -67,12 +71,7 @@ export const Hero = () => {
           </Button>
         </div>
       </Container>
-      <div className="flex flex-col items-center justify-center relative p-2 md:px-20 md:pt-20 cursor-pointer md:-mt-20 gap-10">
-        <div className="w-full max-w-6xl">
-          <div className="relative h-[22rem] md:h-[32rem] overflow-hidden rounded-[30px] border-4 border-neutral-900 bg-charcoal shadow-2xl">
-            <SplineHeroModel />
-          </div>
-        </div>
+      <div className="relative z-10 flex flex-col items-center justify-center p-2 md:px-20 md:pt-28 cursor-pointer md:-mt-20">
         <div
           className="w-full relative"
           style={{
