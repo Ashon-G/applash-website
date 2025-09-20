@@ -3,14 +3,12 @@ import React, { useRef } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "motion/react";
 import { Button } from "./button";
 import { HiArrowRight } from "react-icons/hi2";
-import Image from "next/image";
 import { Container } from "./container";
 import { Heading } from "./heading";
 import { Subheading } from "./subheading";
-import { VideoModal } from "./video-modal";
 import { FeaturedImages } from "./featured-images";
 import Beam from "./beam";
-import { ArcadeEmbed } from "./arcade";
+import { SplineHeroModel } from "./spline-hero-model";
 export const Hero = () => {
   const containerRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
@@ -76,7 +74,7 @@ export const Hero = () => {
           }}
         >
           <Card rotate={rotate} translate={translate} scale={scale}>
-            <ArcadeEmbed />
+            <SplineHeroModel />
           </Card>
         </div>
       </div>
