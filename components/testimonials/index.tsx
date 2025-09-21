@@ -16,10 +16,9 @@ export const Testimonials = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <TbLocationBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Trusted by founders and product teams</Heading>
+        <Heading className="pt-4">Loved by revenue teams worldwide</Heading>
         <Subheading>
-          Applash powers serial entrepreneurs and ambitious teams shipping
-          native apps from their web experience.
+          Vatas keep go-to-market teams closing while AI handles the grind.
         </Subheading>
       </div>
 

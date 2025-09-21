@@ -10,9 +10,9 @@ import { IconReceiptFilled } from "@tabler/icons-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing | Applash",
+  title: "Pricing | Vatas",
   description:
-    "Choose the Applash plan that helps you ship native iOS and Android apps from your existing web experience without rebuilding anything.",
+    "Only pay when Vatas deliver qualified leads, or lock in a subscription once you consistently close 20+ new deals a month.",
   openGraph: {
     images: ["/banner.png"],
   },
@@ -27,11 +27,10 @@ export default function PricingPage() {
           <IconReceiptFilled className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
         <Heading as="h1" className="mt-4">
-          Simple pricing
+          Results-based pricing
         </Heading>
         <Subheading>
-          Transparent pricing for startups, growing products, and enterprises
-          shipping their web apps as native mobile experiences with Applash.
+          Straightforward pricing for teams that want AI sellers driving pipeline—no hidden retainers.
         </Subheading>
         <PricingGrid />
       </div>

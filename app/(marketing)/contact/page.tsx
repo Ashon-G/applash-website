@@ -7,9 +7,9 @@ import { Tools } from "@/components/tools";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Applash",
+  title: "Contact | Vatas",
   description:
-    "Reach the Applash team to learn how we can turn your web application into fully featured iOS and Android apps.",
+    "Reach the Vatas team to see how autonomous AI sellers can qualify and close leads from your social channels 24/7.",
   openGraph: {
     images: ["/banner.png"],
   },

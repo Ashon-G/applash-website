@@ -24,16 +24,16 @@ export const Features = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Launch mobile apps from your web app</Heading>
+        <Heading className="pt-4">Everything your AI sellers need to win deals</Heading>
         <Subheading>
-          Applash includes everything you need to convert your existing web application into polished iOS and Android apps.
+          Vatas work every social channel, qualify fit, and only tap you when a human touch is needed.
         </Subheading>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
           <Card className="lg:col-span-2">
-            <CardTitle>Custom App Icon</CardTitle>
+            <CardTitle>Connect every social account</CardTitle>
             <CardDescription>
-              Create and upload your own custom mobile app icon and splash screen.
+              Link LinkedIn, Reddit, Slack, email, and more so vatas jump into warm conversations right away.
             </CardDescription>
             <CardSkeletonContainer>
               <SkeletonOne />
@@ -43,18 +43,18 @@ export const Features = () => {
             <CardSkeletonContainer className="max-w-[16rem] mx-auto">
               <SkeletonTwo />
             </CardSkeletonContainer>
-            <CardTitle>Push Notifications</CardTitle>
+            <CardTitle>Qualification playbooks</CardTitle>
             <CardDescription>
-              Easily add notifications via One Signaal.
+              Set ICP rules and scoring so only sales-ready leads ever reach your pipeline.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonThree />
             </CardSkeletonContainer>
-            <CardTitle>Auto App Submission</CardTitle>
+            <CardTitle>Escalate when stuck</CardTitle>
             <CardDescription>
-              Generate signed builds for the Apple App Store and Google Play in minutes..
+              Vatas ping you for context once, save the answer, and handle the next ask on their own.
             </CardDescription>
           </Card>
           <Card>
@@ -64,18 +64,18 @@ export const Features = () => {
             >
               <SkeletonFour />
             </CardSkeletonContainer>
-            <CardTitle>Native Features</CardTitle>
+            <CardTitle>Knowledge-fed conversations</CardTitle>
             <CardDescription>
-              Tap into camera, geolocation, and microphone with 1-click.
+              Sync docs, call recordings, and analytics so every outreach stays on-message and current.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonFive />
             </CardSkeletonContainer>
-            <CardTitle>App Store ready</CardTitle>
+            <CardTitle>Pay-for-results billing</CardTitle>
             <CardDescription>
-              Generate signed builds for the Apple App Store and Google Play in minutes.
+              Get one monthly invoice tied to qualified deals, starting at $50 per lead.
             </CardDescription>
           </Card>
         </div>

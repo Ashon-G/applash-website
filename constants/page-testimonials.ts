@@ -8,155 +8,153 @@ interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     name: "Manu Arora",
-    quote:
-      "Applash turned our SaaS dashboard into App Store ready apps in a single weekend.",
+    quote: "Vatas booked demos from LinkedIn communities we barely tracked.",
     src: "https://i.pravatar.cc/150?img=1",
     designation: "Tech Innovator & Entrepreneur",
   },
   {
     name: "Tyler Durden",
     quote:
-      "Publishing updates to iOS and Android from one codebase is so much easier with Applash.",
+      "Our SDRs now spend mornings closing because vatas deliver ready conversations.",
     src: "https://i.pravatar.cc/150?img=2",
     designation: "Creative Director & Business Owner",
   },
   {
     name: "Alice Johnson",
     quote:
-      "Applash handled push notifications and offline caching without requiring any native code from our team.",
+      "Escalate once and every future vata nails the objection.",
     src: "https://i.pravatar.cc/150?img=3",
     designation: "Senior Software Engineer",
   },
   {
     name: "Bob Smith",
     quote:
-      "Our operations team finally has a real mobile experience thanks to Applash.",
+      "The unified inbox finally shows every social touchpoint in one place.",
     src: "https://i.pravatar.cc/150?img=4",
     designation: "Industry Analyst",
   },
   {
     name: "Cathy Lee",
-    quote:
-      "The ability to ship both stores simultaneously is a lifesaver for product managers.",
+    quote: "Finance loves invoices tied directly to Vatas-sourced pipeline.",
     src: "https://i.pravatar.cc/150?img=5",
     designation: "Product Manager",
   },
   {
     name: "David Wright",
     quote:
-      "Applash feels like having a mobile team on demand.",
+      "Weekly insights reveal which knowledge articles keep deals moving.",
     src: "https://i.pravatar.cc/150?img=6",
     designation: "Research Scientist",
   },
   {
     name: "Eva Green",
     quote:
-      "Analytics and release management from Applash keep our entire crew aligned.",
+      "HubSpot updates arrive with transcripts and sentiment for instant context.",
     src: "https://i.pravatar.cc/150?img=7",
     designation: "Operations Director",
   },
   {
     name: "Frank Moore",
     quote:
-      "We can run experiments on mobile now that Applash handles builds for us.",
+      "Connecting product analytics let agents reference usage data day one.",
     src: "https://i.pravatar.cc/150?img=8",
     designation: "Project Manager",
   },
   {
     name: "Grace Hall",
     quote:
-      "Design stayed consistent because Applash mirrors our web brand perfectly.",
+      "Reddit threads used to be a blind spot; now vatas lead them.",
     src: "https://i.pravatar.cc/150?img=9",
     designation: "Marketing Specialist",
   },
   {
     name: "Henry Ford",
     quote:
-      "Support was responsive and guided us through every App Store review.",
+      "Escalations are painless—answer once and nobody asks again.",
     src: "https://i.pravatar.cc/150?img=10",
     designation: "Operations Analyst",
   },
   {
     name: "Ivy Wilson",
     quote:
-      "Applash keeps our engineers focused on shipping web features, not rebuilding mobile clients.",
+      "New-market ramp time dropped from months to days with vatas.",
     src: "https://i.pravatar.cc/150?img=11",
     designation: "Business Consultant",
   },
   {
     name: "Jack Brown",
     quote:
-      "The QA team loves how fast we can spin new test builds with Applash.",
+      "The growth subscription keeps budgeting predictable past twenty wins.",
     src: "https://i.pravatar.cc/150?img=12",
     designation: "Performance Manager",
   },
   {
     name: "Kathy Adams",
     quote:
-      "Launching new markets is easier now that Applash automates submission checklists.",
+      "Partners watch their vatas alongside ours through shared dashboards.",
     src: "https://i.pravatar.cc/150?img=13",
     designation: "Innovation Lead",
   },
   {
     name: "Leo Carter",
     quote:
-      "Applash’s native integrations unlocked device features we had on our roadmap for months.",
+      "We trace closed revenue to the exact community post a vata touched.",
     src: "https://i.pravatar.cc/150?img=14",
     designation: "Technology Strategist",
   },
   {
     name: "Mia Turner",
     quote:
-      "Switching to Applash cut our mobile release cycle from weeks to hours.",
+      "Prospects never wait overnight anymore; vatas keep chats alive.",
     src: "https://i.pravatar.cc/150?img=15",
     designation: "Systems Integrator",
   },
   {
     name: "Nathan Hill",
     quote:
-      "Our investors were impressed that we had native apps ready without hiring anyone new.",
+      "24/7 AI sellers let our reps focus entirely on demos.",
     src: "https://i.pravatar.cc/150?img=16",
     designation: "Investment Analyst",
   },
   {
     name: "Olivia Scott",
     quote:
-      "Offline mode means our field teams can keep working even without signal.",
+      "Compliance signs off once and knowledge stays locked to the script.",
     src: "https://i.pravatar.cc/150?img=17",
     designation: "Quality Assurance Manager",
   },
   {
     name: "Peter White",
     quote:
-      "Applash made branding assets like icons and splash screens effortless to manage.",
+      "We coach reps straight from vata transcripts—they're masterclass quality.",
     src: "https://i.pravatar.cc/150?img=18",
     designation: "Strategic Planner",
   },
   {
     name: "Quinn Taylor",
     quote:
-      "Push notifications helped us re-engage dormant users immediately after launch.",
+      "Partners co-sell by spinning up vatas as staff extensions.",
     src: "https://i.pravatar.cc/150?img=19",
     designation: "Growth Manager",
   },
   {
     name: "Rachel Black",
     quote:
-      "The Applash dashboard makes it obvious which releases are live across both stores.",
+      "Analytics show exactly how many hours of manual follow-up vanished.",
     src: "https://i.pravatar.cc/150?img=20",
     designation: "Client Support Coordinator",
   },
   {
     name: "Samuel Lee",
     quote:
-      "We appreciate how Applash keeps parity between our web and mobile experiences.",
+      "One stored answer upgrades every vata instantly.",
     src: "https://i.pravatar.cc/150?img=21",
     designation: "Futurist",
   },
   {
     name: "Tina Brooks",
     quote:
-      "Applash gave us the confidence to promise native apps during sales calls.",
+      "Marketing runs campaigns while agents nurture every lead to the finish.",
     src: "https://i.pravatar.cc/150?img=22",
     designation: "Process Analyst",
   },

@@ -146,7 +146,7 @@ const cards: CardContent[] = [
       willChange: "transform",
     },
     heading: {
-      prefix: "Where onboarding takes",
+      prefix: "Where social listening goes live in",
       highlight: {
         text: "seconds",
         gradient: "linear-gradient(90deg, rgb(255, 130, 130) 0%, rgb(255, 238, 81) 100%)",
@@ -191,7 +191,7 @@ const cards: CardContent[] = [
       willChange: "transform",
     },
     heading: {
-      prefix: "Where training takes",
+      prefix: "Where playbooks update in",
       highlight: {
         text: "minutes",
         gradient: "linear-gradient(90deg, rgb(139, 92, 246) 0%, rgb(255, 255, 255) 100%)",
@@ -233,7 +233,7 @@ const cards: CardContent[] = [
       border: "1px solid rgb(217, 70, 239)",
     },
     heading: {
-      prefix: "And where tasks are done in milliseconds",
+      prefix: "And where follow-ups fire in milliseconds",
       suffix: ".",
     },
     textGridStyle: {

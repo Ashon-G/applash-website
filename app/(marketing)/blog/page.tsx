@@ -12,9 +12,9 @@ import { truncate } from "@/lib/utils";
 import { format } from "date-fns";
 
 export const metadata: Metadata = {
-  title: "Blog | Applash",
+  title: "Blog | Vatas",
   description:
-    "Guides, stories, and release notes on converting your web app into native mobile experiences with Applash.",
+    "Guides, stories, and product notes on building a 24/7 digital sales force with Vatas.",
   openGraph: {
     images: ["/banner.png"],
   },
@@ -34,8 +34,7 @@ export default async function ArticlesIndex() {
             Blog
           </Heading>
           <Subheading className="text-center">
-            Discover how teams ship iOS and Android apps from their existing
-            web codebase, plus the latest Applash product updates.
+            See how teams let AI sellers run their social channels and catch the latest Vatas updates.
           </Subheading>
         </div>
 

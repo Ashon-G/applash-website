@@ -4,44 +4,44 @@ import { Grid } from "./grid";
 export const FeaturesGrid = () => {
   const grid = [
     {
-      title: "HIPAA and SOC2 Compliant",
+      title: "Omnichannel monitoring",
       description:
-        "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+        "Vatas watch LinkedIn, Reddit, X, Discord, and inboxes to catch buyer signals instantly.",
     },
     {
-      title: "Automated Social Media Posting",
+      title: "Knowledge hub training",
       description:
-        "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+        "Sync documents, recordings, and analytics so every agent uses fresh messaging.",
     },
     {
-      title: "Advanced Analytics",
+      title: "Inbox oversight",
       description:
-        "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+        "Review, approve, or jump into any conversation from one inbox with full history.",
     },
     {
-      title: "Content Calendar",
+      title: "Lead verification",
       description:
-        "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+        "Identity, intent, and fit are verified before a lead hits your CRM.",
     },
     {
-      title: "Audience Targeting",
+      title: "Escalation memory",
       description:
-        "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+        "Answer once and vatas reuse it, building smarter playbooks automatically.",
     },
     {
-      title: "Social Listening",
+      title: "Analytics & CRM syncs",
       description:
-        "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+        "Pipeline metrics, transcripts, and next steps flow into Salesforce, HubSpot, and more.",
     },
     {
-      title: "Customizable Templates",
+      title: "Partner-ready workspaces",
       description:
-        "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+        "Give partners branded workspaces with shared hubs and performance dashboards.",
     },
     {
-      title: "Collaboration Tools",
+      title: "Enterprise security",
       description:
-        "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+        "SOC 2 controls, SSO, audit logs, and permissions keep every action traceable.",
     },
   ];
   return (

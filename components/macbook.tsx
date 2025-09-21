@@ -117,7 +117,7 @@ export const Lid = ({ src }: { src?: string }) => {
         >
           <Image
             src={src as string}
-            alt="Applash icon"
+            alt="Vatas dashboard"
             fill
             className="object-cover object-left-top rounded-lg inset-0 h-full w-full"
           />
