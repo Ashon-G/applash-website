@@ -15,11 +15,11 @@ export const CTA = () => {
       <Container className="flex flex-col md:flex-row justify-between items-center w-full px-8">
         <div className="flex flex-col">
           <motion.h2 className="text-white text-xl text-center md:text-left md:text-3xl font-bold mx-auto md:mx-0 max-w-xl ">
-            Start building mobile apps from your web app with Applash today
+            Put vatas to work on your pipeline today
           </motion.h2>
           <p className="max-w-md mt-8 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-400">
-            Applash converts your web app into native mobile apps and ships updates instantly.
-            Join thousands of developers launching on the App Store and Google Play faster.
+            Connect your social channels, upload your knowledge hub, and let autonomous sellers chase, qualify, and close the leads you want.
+            Stay in control from the inbox while vatas handle the busy work.
           </p>
           <FeaturedImages
             textClassName="lg:text-left text-center"
@@ -31,9 +31,9 @@ export const CTA = () => {
         <Button
           className="flex space-x-2 items-center group !text-lg"
           as="a"
-          href="https://applash.online"
+          href="/contact"
         >
-          <span>Try Applash free</span>
+          <span>Schedule your launch call</span>
           <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
         </Button>
       </Container>

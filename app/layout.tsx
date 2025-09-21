@@ -8,9 +8,9 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Applash - Convert web apps to mobile apps",
+  title: "Vatas – AI digital sales force for social selling",
   description:
-    "Applash creates beautiful native mobile apps from your web app url for FREE",
+    "Vatas deploys autonomous AI agents that work your social networks 24/7 to find, qualify, and close new leads while you sleep.",
   openGraph: {
     images: ["/banner.png"],
   },

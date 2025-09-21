@@ -3,9 +3,9 @@ import { BlogLayout } from "@/components/blog-layout";
 export const blog = {
   author: { name: "Manu Arora", src: "/avatar.jpeg" },
   date: "2024-07-14",
-  title: "Applash 2024 Product Changelog",
+  title: "Vatas 2024 Product Changelog",
   description:
-    "Track the quarterly Applash upgrades that make converting your web app into native iOS and Android builds faster and more reliable.",
+    "Track the quarterly Vatas upgrades that help autonomous sales agents find, qualify, and close more deals across social channels.",
   image:
     "https://images.unsplash.com/photo-1696429175928-793a1cdef1d3?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 };
@@ -19,68 +19,30 @@ export const metadata = {
 
 export default (props) => <BlogLayout blog={blog} {...props} />;
 
-## Lorem ipsum heading
+## Q1 2024 — Training the knowledge hub
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+We opened the year by launching the Vatas knowledge hub. Teams can now connect Google Drive, Notion, Dropbox, and their analytics warehouse to feed agents the exact messaging, product specs, and case studies they need. Version history and tagging make it easy to tailor talking points by persona or region without duplicating documents.
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+To make onboarding seamless, we also added guided playbook creation. Upload your ideal customer profile, objection handling notes, and call recordings; within minutes, vatas begin mirroring the tone of your top performers.
 
-```jsx
-"use client";
+## Q2 2024 — Inbox oversight and escalation memory
 
-import { useRouter } from "next/navigation";
-import { BlogWithSlug } from "@/lib/blog";
+April introduced the unified inbox. Revenue leaders get a live feed of every social conversation, approval request, and escalation. When an agent hits a blocker, your answer is saved to the knowledge graph automatically so the next vata handles the question on its own.
 
-export function BlogLayout({
-  blog,
-  children,
-}: {
-  blog: BlogWithSlug,
-  children: React.ReactNode,
-}) {
-  let router = useRouter();
-  return (
-    <div className="mt-16 lg:mt-32">
-      <div className="xl:relative">
-        <div className="mx-auto max-w-2xl">
-          <article>
-            <header className="flex flex-col">
-              <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                {blog.title}
-              </h1>
-              <time
-                dateTime={blog.date}
-                className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
-              >
-                <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-                <span className="ml-3">{blog.date.toString()}</span>
-              </time>
-            </header>
-            <div className="mt-8 prose prose-sm" data-mdx-content>
-              {children}
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  );
-}
-```
+This quarter also added Slack and Microsoft Teams notifications. Your team can approve replies or drop in additional context right from their preferred workspace, keeping sales momentum high even on mobile.
 
-## Lorem ipsum heading
+## Q3 2024 — Performance analytics and CRM syncs
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+Summer shipped our analytics overhaul. Dashboards now show sourced pipeline, win rates, conversation sentiment, and time saved compared to manual prospecting. Native integrations with HubSpot, Salesforce, and Close pass transcripts, contact data, and qualification notes straight into your CRM.
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+We also introduced lead verification. Before a contact hits your pipeline, Vatas cross-check role, company fit, and intent signals to ensure every opportunity meets your thresholds.
 
-## Lorem ipsum heading
+## Q4 2024 — Partner program and governance controls
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+To close out the year we launched the partner workspace. Agencies and consultants can manage multiple client accounts, share knowledge hubs, and earn revenue share on every closed lead. Enterprise teams gained granular permissions, audit trails, and single sign-on to meet compliance requirements.
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+Finally, we rolled out multilingual outreach and region-aware playbooks so vatas can sell into new markets the moment you are ready.
 
-## Lorem ipsum heading
+### Looking ahead to 2025
 
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
-
-Nostrud sit reprehenderit labore enim minim veniam elit reprehenderit laborum ea consequat excepteur elit anim. Labore consequat Lorem dolor magna consequat sunt eu occaecat laboris mollit incididunt quis consectetur dolore. Cillum eiusmod ipsum ex do qui. Proident ex ullamco excepteur proident Lorem aliquip quis ex sunt nostrud qui excepteur velit proident laborum.
+Next year we are focused on predictive routing and deeper analytics into how each knowledge asset influences conversion rates. Follow along here or inside the product to see how the Vatas digital sales force keeps leveling up.

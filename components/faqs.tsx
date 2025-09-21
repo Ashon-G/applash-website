@@ -6,63 +6,63 @@ import { Heading } from "./heading";
 const questions = [
   {
     id: 1,
-    title: "What is Applash?",
+    title: "What is Vatas?",
     description:
-      "Applash is a platform that converts your existing web application into fully featured iOS and Android apps.",
+      "Vatas is a mobile app digital sales force that uses AI agents to hunt, qualify, and close leads across social networks 24/7.",
   },
   {
     id: 2,
-    title: "How does Applash convert my web app to mobile?",
+    title: "How do vatas find new leads?",
     description:
-      "Applash wraps your web app in a native container and generates installable packages without requiring additional code.",
+      "Each vata crawls LinkedIn, Reddit, communities, and inboxes to spot buying signals, join threads, and book meetings with the right prospects.",
   },
   {
     id: 3,
-    title: "Which platforms are supported?",
+    title: "What data should I connect?",
     description:
-      "Applash builds native apps for both the Apple App Store and Google Play Store.",
+      "Link your social profiles, storage, analytics, and knowledge bases so vatas understand your business, customers, and value props.",
   },
   {
     id: 4,
-    title: "Do I need to maintain separate codebases?",
+    title: "How do vatas learn our voice?",
     description:
-      "No. Keep your web code as the single source of truth and Applash handles the mobile builds for you.",
+      "Upload assets to the knowledge hub and tag ideal customer personas. Vatas adapt their outreach with every conversation and analytics signal you provide.",
   },
   {
     id: 5,
-    title: "Can I send push notifications?",
+    title: "What happens when a vata gets stuck?",
     description:
-      "Yes, Applash includes built-in push notification support to engage your users.",
+      "They ping you through the inbox, capture your response, and store it for future conversations so the same question is never escalated twice.",
   },
   {
     id: 6,
-    title: "Does Applash work offline?",
+    title: "How do I monitor activity?",
     description:
-      "Applash adds offline caching so your app remains usable even without an internet connection.",
+      "Review every message, approval, and lead status from the inbox and analytics dashboard to stay in full control of your pipeline.",
   },
   {
     id: 7,
-    title: "How are updates handled?",
+    title: "Can Vatas work with my CRM?",
     description:
-      "Deploy updates to your web app and Applash automatically delivers them to your mobile users.",
+      "Yes. Vatas sync qualified opportunities with the tools you already use so reps can pick up the conversation without missing context.",
   },
   {
     id: 8,
-    title: "Is there a free trial?",
+    title: "How does pricing work?",
     description:
-      "Yes, you can try Applash for free and generate your first mobile build in minutes.",
+      "Pay $50 per qualified lead on the monthly invoice, or switch to the $399/month subscription if you plan to close more than twenty new deals every month.",
   },
   {
     id: 9,
-    title: "How can I track user analytics?",
+    title: "Is my data secure?",
     description:
-      "Applash provides in-app analytics to monitor installs, sessions, and engagement.",
+      "We treat your connected accounts and knowledge hub with enterprise-grade security, encryption, and audit trails for every action a vata takes.",
   },
   {
     id: 10,
-    title: "How do I get started?",
+    title: "How fast can we launch?",
     description:
-      "Sign up on our website and upload your web app URL to create your first mobile app with Applash.",
+      "Most teams connect their channels, upload their playbooks, and watch vatas source their first qualified lead in less than a day.",
   },
 ];
 
