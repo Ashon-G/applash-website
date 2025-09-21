@@ -4,18 +4,19 @@ import { Container } from "../container";
 import { Heading } from "../heading";
 import { Subheading } from "../subheading";
 import { FeatureIconContainer } from "./feature-icon-container";
-import { FaBolt, FaChartLine } from "react-icons/fa";
-import {
-  Card,
-  CardDescription,
-  CardSkeletonContainer,
-  CardTitle,
-} from "./card";
-import { SkeletonOne } from "./skeletons/first";
-import { SkeletonTwo } from "./skeletons/second";
-import { SkeletonThree } from "./skeletons/third";
-import { SkeletonFour } from "./skeletons/fourth";
-import { SkeletonFive } from "./skeletons/fifth";
+import { FaBolt } from "react-icons/fa";
+import { Iphone15Pro } from "@/registry/magicui/iphone-15-pro";
+
+export function Iphone15ProDemo() {
+  return (
+    <div className="relative max-w-2xl mx-auto">
+      <Iphone15Pro
+        className="size-full"
+        videoSrc="https://videos.pexels.com/video-files/8946986/8946986-uhd_1440_2732_25fps.mp4"
+      />
+    </div>
+  );
+}
 
 export const Features = () => {
   return (
@@ -29,55 +30,8 @@ export const Features = () => {
           Applash includes everything you need to convert your existing web application into polished iOS and Android apps.
         </Subheading>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
-          <Card className="lg:col-span-2">
-            <CardTitle>Custom App Icon</CardTitle>
-            <CardDescription>
-              Create and upload your own custom mobile app icon and splash screen.
-            </CardDescription>
-            <CardSkeletonContainer>
-              <SkeletonOne />
-            </CardSkeletonContainer>
-          </Card>
-          <Card>
-            <CardSkeletonContainer className="max-w-[16rem] mx-auto">
-              <SkeletonTwo />
-            </CardSkeletonContainer>
-            <CardTitle>Push Notifications</CardTitle>
-            <CardDescription>
-              Easily add notifications via One Signaal.
-            </CardDescription>
-          </Card>
-          <Card>
-            <CardSkeletonContainer>
-              <SkeletonThree />
-            </CardSkeletonContainer>
-            <CardTitle>Auto App Submission</CardTitle>
-            <CardDescription>
-              Generate signed builds for the Apple App Store and Google Play in minutes..
-            </CardDescription>
-          </Card>
-          <Card>
-            <CardSkeletonContainer
-              showGradient={false}
-              className="max-w-[16rem] mx-auto"
-            >
-              <SkeletonFour />
-            </CardSkeletonContainer>
-            <CardTitle>Native Features</CardTitle>
-            <CardDescription>
-              Tap into camera, geolocation, and microphone with 1-click.
-            </CardDescription>
-          </Card>
-          <Card>
-            <CardSkeletonContainer>
-              <SkeletonFive />
-            </CardSkeletonContainer>
-            <CardTitle>App Store ready</CardTitle>
-            <CardDescription>
-              Generate signed builds for the Apple App Store and Google Play in minutes.
-            </CardDescription>
-          </Card>
+        <div className="py-10">
+          <Iphone15ProDemo />
         </div>
       </Container>
     </GradientContainer>
