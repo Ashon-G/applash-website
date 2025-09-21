@@ -4,44 +4,44 @@ import { Grid } from "./grid";
 export const FeaturesGrid = () => {
   const grid = [
     {
-      title: "HIPAA and SOC2 Compliant",
+      title: "Omnichannel monitoring",
       description:
-        "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+        "Vatas watch LinkedIn, Reddit, X, Discord, and inboxes simultaneously to catch buyer signals the moment they appear.",
     },
     {
-      title: "Automated Social Media Posting",
+      title: "Knowledge hub training",
       description:
-        "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+        "Sync documents, recordings, and analytics so every agent sells with your latest messaging and proof points.",
     },
     {
-      title: "Advanced Analytics",
+      title: "Inbox oversight",
       description:
-        "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+        "Review, approve, or jump into any conversation from a single inbox that captures the full history of each prospect.",
     },
     {
-      title: "Content Calendar",
+      title: "Lead verification",
       description:
-        "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+        "Identity, intent, and fit are validated before a lead hits your CRM so reps focus only on real opportunities.",
     },
     {
-      title: "Audience Targeting",
+      title: "Escalation memory",
       description:
-        "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+        "Answer a tough question once and Vatas store it for the next conversation, building smarter playbooks automatically.",
     },
     {
-      title: "Social Listening",
+      title: "Analytics & CRM syncs",
       description:
-        "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+        "Pipeline metrics, transcripts, and recommended next steps stream into Salesforce, HubSpot, and the tools you already use.",
     },
     {
-      title: "Customizable Templates",
+      title: "Partner-ready workspaces",
       description:
-        "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+        "Give agencies or channel teams their own branded area with shared knowledge hubs and performance dashboards.",
     },
     {
-      title: "Collaboration Tools",
+      title: "Enterprise security",
       description:
-        "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+        "SOC 2 controls, SSO, audit logs, and granular permissions keep every action traceable across your organization.",
     },
   ];
   return (

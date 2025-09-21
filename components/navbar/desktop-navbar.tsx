@@ -69,10 +69,12 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         </div>
       </div>
       <div className="flex space-x-2 items-center">
-        <Button variant="simple" as="a" href="https://applash.online">
-          Register
+        <Button variant="simple" as="a" href="/register">
+          Sign in
         </Button>
-        <Button>Book a demo</Button>
+        <Button as="a" href="/contact">
+          Book a strategy call
+        </Button>
       </div>
     </motion.div>
   );

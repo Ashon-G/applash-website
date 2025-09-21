@@ -8,9 +8,9 @@ import { Tools } from "@/components/tools";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Features | Applash",
+  title: "Features | Vatas",
   description:
-    "Explore the Applash toolkit for turning your web application into polished iOS and Android apps with native integrations, push notifications, and analytics.",
+    "Explore the Vatas digital sales force—from channel connections and knowledge hub training to inbox oversight and analytics that prove every closed lead.",
   openGraph: {
     images: ["/banner.png"],
   },

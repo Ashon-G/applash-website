@@ -23,7 +23,7 @@ export const Register = () => {
     <Container className="h-screen max-w-lg mx-auto flex flex-col items-center justify-center">
       <Logo />
       <h1 className="text-xl md:text-4xl font-bold my-4">
-        Welcome to Applash
+        Welcome to Vatas
       </h1>
 
       <div className="flex flex-col sm:flex-row gap-4 w-full">
