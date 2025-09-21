@@ -81,16 +81,24 @@ export const MobileNavbar = ({ navItems }: any) => {
             ))}
           </div>
           <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
-            <Button>Book a demo</Button>
             <Button
-              variant="simple"
               as="a"
-              href="https://applash.online"
+              href="/contact"
               onClick={() => {
                 setOpen(false);
               }}
             >
-              Register
+              Book a launch call
+            </Button>
+            <Button
+              variant="simple"
+              as="a"
+              href="/register"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              Sign in
             </Button>
           </div>
         </div>

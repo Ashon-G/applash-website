@@ -17,10 +17,10 @@ import { BlurImage } from "./blur-image";
 export const Tools = () => {
   const content = [
     {
-      icon: <IconMailForward className="h-8 w-8 text-secondary" />,
-      title: "Instant packaging",
+      icon: <IconSocial className="h-8 w-8 text-secondary" />,
+      title: "Connect your social graph",
       description:
-        "Drop in your web app URL and Applash wraps it into installable mobile apps in minutes.",
+        "Authorize LinkedIn, Reddit, X, Slack, and email so vatas surface warm conversations automatically.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -34,10 +34,10 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconSocial className="h-8 w-8 text-secondary" />,
-      title: "Push notification dashboard",
+      icon: <IconMailForward className="h-8 w-8 text-secondary" />,
+      title: "Live inbox oversight",
       description:
-        "Send targeted push notifications and in-app messages without touching native code.",
+        "Review outreach, approve replies, and jump in the moment a vata needs you.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -52,9 +52,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Built-in analytics",
+      title: "Knowledge hub sync",
       description:
-        "Track installs, sessions and engagement for every mobile build right from your Applash dashboard.",
+        "Feed recordings, docs, and analytics so vatas learn your product, objections, and differentiators.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -68,10 +68,10 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Automated updates",
+      icon: <IconTool className="h-8 w-8 text-secondary" />,
+      title: "Revenue analytics",
       description:
-        "Ship fixes and new features to your mobile users the moment you deploy to the web.",
+        "Track sourced pipeline, win rates, and response speed across every vata from one dashboard.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -128,9 +128,9 @@ export const Tools = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconTool className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="mt-4">All the tools to manage your mobile apps</Heading>
+        <Heading className="mt-4">Every workflow in one revenue command center</Heading>
         <Subheading>
-          Applash provides a full toolkit for packaging, publishing and growing your mobile presence.
+          Launch vatas, train them once, stay in the inbox, and track pipeline impact without juggling tools.
         </Subheading>
       </div>
       <StickyScroll content={content} />

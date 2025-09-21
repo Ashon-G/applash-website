@@ -49,11 +49,11 @@ export const Hero = () => {
           as="h1"
           className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10  py-6"
         >
-          Convert Web Apps to Mobile with Applash
+          Automate lead gen with always-on Vatas
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10">
-          Applash instantly turns your web application into native iOS and Android apps.
-          Reach more users, send push notifications, and publish updates from a single codebase.
+          Connect your social, data, and knowledge hubs once and our AI reps sweep LinkedIn, Reddit, and more to qualify and close.
+          Answer a question once, and Vatas remembers while you track every move from one inbox.
         </Subheading>
         <FeaturedImages
           textClassName="lg:text-left text-center"
@@ -64,9 +64,9 @@ export const Hero = () => {
           <Button
             className="flex space-x-2 items-center group !text-lg"
             as="a"
-            href="https://applash.online"
+            href="/contact"
           >
-            <span>Get started free</span>{" "}
+            <span>Launch your vata</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </Button>
         </div>

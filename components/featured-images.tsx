@@ -156,7 +156,7 @@ export const FeaturedImages = ({
           textClassName
         )}
       >
-        Trusted by 27,000+ creators
+        Trusted by modern revenue teams
       </p>
     </div>
   );

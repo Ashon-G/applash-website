@@ -18,21 +18,20 @@ export const ContactForm = () => {
         </div>
         <Heading className="text-left">Contact us</Heading>
         <Subheading className="text-left text-neutral-400">
-          Tell us about your web app and we&apos;ll help you launch it on the Apple
-          App Store and Google Play with Applash.
+          Tell us about your buyers and we&apos;ll show you how vatas hunt, qualify, and close the leads you want on autopilot.
         </Subheading>
 
         <div className="text-sm mt-10">
           <p className="text-sm text-neutral-200">Email</p>
-          <p className="text-sm text-neutral-400">hello@applash.com</p>
+          <p className="text-sm text-neutral-400">hello@vatas.ai</p>
         </div>
         <div className="text-sm mt-4">
           <p className="text-sm text-neutral-200">Phone</p>
-          <p className="text-sm text-neutral-400">+1 (415) 555-0199</p>
+          <p className="text-sm text-neutral-400">+1 (305) 555-0132</p>
         </div>
         <div className="text-sm mt-4">
           <p className="text-sm text-neutral-200">Support</p>
-          <p className="text-sm text-neutral-400">support@applash.com</p>
+          <p className="text-sm text-neutral-400">support@vatas.ai</p>
         </div>
       </div>
       <div className="flex flex-col items-start gap-4 max-w-2xl w-full mx-auto bg-gradient-to-b from-neutral-900 to-neutral-950 p-10 rounded-3xl relative overflow-hidden">
