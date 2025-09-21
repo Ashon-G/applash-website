@@ -49,11 +49,10 @@ export const Hero = () => {
           as="h1"
           className="text-4xl md:text-4xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10  py-6"
         >
-          Automate lead gen with always-on Vatas
+          A Digital Sales Force That Never Sleeps
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10">
-          Connect your social, data, and knowledge hubs once and our AI reps sweep LinkedIn, Reddit, and more to qualify and close.
-          Answer a question once, and Vatas remembers while you track every move from one inbox.
+          vatas finds, qualifies, nurtures, and closes deals for you across multiple channels so you can focus on making your product better
         </Subheading>
         <FeaturedImages
           textClassName="lg:text-left text-center"
