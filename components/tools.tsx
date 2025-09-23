@@ -23,13 +23,8 @@ export const Tools = () => {
         "Authorize LinkedIn, Reddit, X, Slack, and email so vatas surface warm conversations automatically.",
       content: (
         <ImageContainer>
-          <BlurImage
-            src="/first.png"
-            alt="dashboard"
-            height="1000"
-            width="1000"
-            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
-          />
+          <Iphone videoSrc="/videos/social.mp4" scale="sm" />
+
         </ImageContainer>
       ),
     },
@@ -40,13 +35,7 @@ export const Tools = () => {
         "Review outreach, approve replies, and jump in the moment a vata needs you.",
       content: (
         <ImageContainer>
-          <BlurImage
-            src="/second.png"
-            alt="dashboard"
-            height="1000"
-            width="1000"
-            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
-          />
+          <Iphone imageSrc="/images/inbox.png" scale="md" />
         </ImageContainer>
       ),
     },
@@ -57,13 +46,7 @@ export const Tools = () => {
         "Feed recordings, docs, and analytics so vatas learn your product, objections, and differentiators.",
       content: (
         <ImageContainer>
-          <BlurImage
-            src="/fourth-backup.png"
-            alt="dashboard"
-            height="1000"
-            width="1000"
-            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
-          />
+          <Iphone videoSrc="/videos/hub.mp4" scale="sm" />
         </ImageContainer>
       ),
     },
