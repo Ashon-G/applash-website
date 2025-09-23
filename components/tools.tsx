@@ -13,6 +13,7 @@ import {
 } from "@tabler/icons-react";
 import { useScroll } from "motion/react";
 import { BlurImage } from "./blur-image";
+import { Iphone } from "./Iphone";
 
 export const Tools = () => {
   const content = [
@@ -24,7 +25,6 @@ export const Tools = () => {
       content: (
         <ImageContainer>
           <Iphone videoSrc="/videos/social.mp4" scale="sm" />
-
         </ImageContainer>
       ),
     },
@@ -111,9 +111,12 @@ export const Tools = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconTool className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="mt-4">Every workflow in one revenue command center</Heading>
+        <Heading className="mt-4">
+          Every workflow in one revenue command center
+        </Heading>
         <Subheading>
-          Launch vatas, train them once, stay in the inbox, and track pipeline impact without juggling tools.
+          Launch vatas, train them once, stay in the inbox, and track pipeline
+          impact without juggling tools.
         </Subheading>
       </div>
       <StickyScroll content={content} />
