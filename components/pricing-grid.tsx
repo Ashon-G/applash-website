@@ -7,6 +7,11 @@ import { cn } from "@/lib/utils";
 import Balancer from "react-wrap-balancer";
 import Beam from "./beam";
 import { Clients } from "./clients";
+import { PopupButton } from "@typeform/embed-react";
+import {
+  TYPEFORM_CONTACT_FORM_ID,
+  TYPEFORM_CTA_MEDIUM,
+} from "@/constants/typeform";
 
 export const PricingGrid = () => {
   const tiers = [
@@ -20,7 +25,6 @@ export const PricingGrid = () => {
         "Inbox visibility for every outreach and escalation",
         "Knowledge hub training included",
       ],
-      href: "/contact",
       ctaText: "Talk to sales",
     },
     {
@@ -34,7 +38,6 @@ export const PricingGrid = () => {
         "Pipeline analytics, CRM syncs, and SLA monitoring",
       ],
       featured: true,
-      href: "/contact",
       ctaText: "Start subscription",
     },
     {
@@ -47,7 +50,6 @@ export const PricingGrid = () => {
         "Private Slack or Teams channel with revenue engineers",
         "Volume pricing and procurement-friendly contracts",
       ],
-      href: "/contact",
       ctaText: "Design your plan",
     },
     {
@@ -60,7 +62,6 @@ export const PricingGrid = () => {
         "Shared inbox permissions across client workspaces",
         "Partner-only reporting and quarterly roadmap previews",
       ],
-      href: "/contact",
       ctaText: "Apply now",
     },
   ];
@@ -91,8 +92,9 @@ export const PricingGrid = () => {
             </div>
             <Button
               variant={tier.featured ? "primary" : "muted"}
-              as="a"
-              href={tier.href}
+              as={PopupButton}
+              id={TYPEFORM_CONTACT_FORM_ID}
+              data-tf-medium={`${TYPEFORM_CTA_MEDIUM}-pricing-${index}`}
               className="mt-4"
             >
               {tier.ctaText}
