@@ -168,21 +168,32 @@ export function ApplyForBetaDialog({
           formData.password
         );
 
-        await updateProfile(credentials.user, {
-          displayName: `${formData.firstName} ${formData.lastName}`.trim(),
-        });
+        try {
+          await updateProfile(credentials.user, {
+            displayName: `${formData.firstName} ${formData.lastName}`.trim(),
+          });
+        } catch (profileError) {
+          console.error("Failed to update display name", profileError);
+        }
 
-        await setDoc(doc(db, "users", credentials.user.uid), {
-          email: formData.email,
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          businessName: formData.businessName,
-          website: formData.website,
-          idealCustomers: formData.idealCustomers,
-          productDescription: formData.productDescription,
-          businessStage: formData.businessStage,
-          createdAt: serverTimestamp(),
-        });
+        await setDoc(
+          doc(db, "users", credentials.user.uid),
+          {
+            uid: credentials.user.uid,
+            email: formData.email,
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            businessName: formData.businessName,
+            website: formData.website,
+            idealCustomers: formData.idealCustomers,
+            productDescription: formData.productDescription,
+            businessStage: formData.businessStage,
+            signupNumber: nextSignupNumber,
+            createdAt: serverTimestamp(),
+            updatedAt: serverTimestamp(),
+          },
+          { merge: true }
+        );
 
         setCompletedSignupNumber(nextSignupNumber);
         setNextSignupNumber((current) => current + 1);
