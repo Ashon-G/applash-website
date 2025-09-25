@@ -26,6 +26,8 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "fast-glob": "^3.3.2",
+    "firebase": "^12.3.0",
+    "firebase-admin": "^13.5.0",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.395.0",
     "mini-svg-data-uri": "^1.4.4",

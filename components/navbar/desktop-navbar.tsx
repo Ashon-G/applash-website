@@ -1,6 +1,6 @@
 "use client";
 import { Logo } from "@/components/logo";
-import { Button } from "../button";
+import { ApplyForBetaDialog } from "@/components/apply-for-beta-dialog";
 import { NavBarItem } from "./navbar-item";
 import {
   useMotionValueEvent,
@@ -69,12 +69,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         </div>
       </div>
       <div className="flex space-x-2 items-center">
-        <Button variant="simple" as="a" href="/register">
-          Sign in
-        </Button>
-        <Button as="a" href="/contact">
-          Book a launch call
-        </Button>
+        <ApplyForBetaDialog />
       </div>
     </motion.div>
   );
