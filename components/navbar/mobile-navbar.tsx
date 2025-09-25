@@ -4,9 +4,9 @@ import { Link } from "next-view-transitions";
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
-import { Button } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { useMotionValueEvent, useScroll } from "motion/react";
+import { ApplyForBetaDialog } from "@/components/apply-for-beta-dialog";
 
 export const MobileNavbar = ({ navItems }: any) => {
   const [open, setOpen] = useState(false);
@@ -80,26 +80,11 @@ export const MobileNavbar = ({ navItems }: any) => {
               </>
             ))}
           </div>
-          <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
-            <Button
-              as="a"
-              href="/contact"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              Book a launch call
-            </Button>
-            <Button
-              variant="simple"
-              as="a"
-              href="/register"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              Sign in
-            </Button>
+          <div className="flex w-full items-start gap-2.5 px-8 py-4">
+            <ApplyForBetaDialog
+              triggerClassName="w-full"
+              onTriggerClick={() => setOpen(false)}
+            />
           </div>
         </div>
       )}
