@@ -7,6 +7,11 @@ import { IoIosClose } from "react-icons/io";
 import { Button } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { useMotionValueEvent, useScroll } from "motion/react";
+import { PopupButton } from "@typeform/embed-react";
+import {
+  TYPEFORM_CONTACT_FORM_ID,
+  TYPEFORM_CTA_MEDIUM,
+} from "@/constants/typeform";
 
 export const MobileNavbar = ({ navItems }: any) => {
   const [open, setOpen] = useState(false);
@@ -82,23 +87,14 @@ export const MobileNavbar = ({ navItems }: any) => {
           </div>
           <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
             <Button
-              as="a"
-              href="/contact"
-              onClick={() => {
+              as={PopupButton}
+              id={TYPEFORM_CONTACT_FORM_ID}
+              data-tf-medium={`${TYPEFORM_CTA_MEDIUM}-navbar-mobile`}
+              onClickCapture={() => {
                 setOpen(false);
               }}
             >
               Book a launch call
-            </Button>
-            <Button
-              variant="simple"
-              as="a"
-              href="/register"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              Sign in
             </Button>
           </div>
         </div>

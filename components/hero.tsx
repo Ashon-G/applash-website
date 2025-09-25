@@ -10,6 +10,11 @@ import { FeaturedImages } from "./featured-images";
 import Beam from "./beam";
 import { SplineHeroModel } from "./spline-hero-model";
 import { ArcadeEmbed } from "./arcade";
+import { PopupButton } from "@typeform/embed-react";
+import {
+  TYPEFORM_CONTACT_FORM_ID,
+  TYPEFORM_CTA_MEDIUM,
+} from "@/constants/typeform";
 export const Hero = () => {
   const containerRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
@@ -62,8 +67,9 @@ export const Hero = () => {
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
           <Button
             className="flex space-x-2 items-center group !text-lg"
-            as="a"
-            href="/contact"
+            as={PopupButton}
+            id={TYPEFORM_CONTACT_FORM_ID}
+            data-tf-medium={`${TYPEFORM_CTA_MEDIUM}-hero`}
           >
             <span>Launch your vata</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />

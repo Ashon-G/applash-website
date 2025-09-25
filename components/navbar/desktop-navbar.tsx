@@ -10,7 +10,11 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { Link } from "next-view-transitions";
+import { PopupButton } from "@typeform/embed-react";
+import {
+  TYPEFORM_CONTACT_FORM_ID,
+  TYPEFORM_CTA_MEDIUM,
+} from "@/constants/typeform";
 
 type Props = {
   navItems: {
@@ -69,10 +73,11 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         </div>
       </div>
       <div className="flex space-x-2 items-center">
-        <Button variant="simple" as="a" href="/register">
-          Sign in
-        </Button>
-        <Button as="a" href="/contact">
+        <Button
+          as={PopupButton}
+          id={TYPEFORM_CONTACT_FORM_ID}
+          data-tf-medium={`${TYPEFORM_CTA_MEDIUM}-navbar-desktop`}
+        >
           Book a launch call
         </Button>
       </div>

@@ -7,6 +7,11 @@ import { HiArrowRight } from "react-icons/hi2";
 import { AmbientColor } from "./ambient-color";
 import { Container } from "./container";
 import { FeaturedImages } from "./featured-images";
+import { PopupButton } from "@typeform/embed-react";
+import {
+  TYPEFORM_CONTACT_FORM_ID,
+  TYPEFORM_CTA_MEDIUM,
+} from "@/constants/typeform";
 
 export const CTA = () => {
   return (
@@ -30,8 +35,9 @@ export const CTA = () => {
         </div>
         <Button
           className="flex space-x-2 items-center group !text-lg"
-          as="a"
-          href="/contact"
+          as={PopupButton}
+          id={TYPEFORM_CONTACT_FORM_ID}
+          data-tf-medium={`${TYPEFORM_CTA_MEDIUM}-cta`}
         >
           <span>Book your launch call</span>
           <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
