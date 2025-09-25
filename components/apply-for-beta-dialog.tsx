@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 
 import { Button } from "@/components/button";
 import {
@@ -14,7 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
-import { auth, db } from "@/lib/firebase";
+import { auth } from "@/lib/firebase";
 
 type BetaDialogProps = {
   triggerClassName?: string;
@@ -150,6 +149,37 @@ export function ApplyForBetaDialog({
     }
   };
 
+  const persistSignup = async (uid: string, signupNumber: number, idToken: string) => {
+    const response = await fetch("/api/beta-signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${idToken}`,
+      },
+      body: JSON.stringify({
+        uid,
+        email: formData.email,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        businessName: formData.businessName,
+        website: formData.website,
+        idealCustomers: formData.idealCustomers,
+        productDescription: formData.productDescription,
+        businessStage: formData.businessStage,
+        signupNumber,
+      }),
+    });
+
+    if (!response.ok) {
+      const payload = (await response.json().catch(() => null)) as
+        | { error?: string }
+        | null;
+
+      const message = payload?.error ?? "We couldn't save your application. Please try again.";
+      throw new Error(message);
+    }
+  };
+
   const handleNext = async () => {
     const validationError = validateCurrentStep();
     if (validationError) {
@@ -176,24 +206,9 @@ export function ApplyForBetaDialog({
           console.error("Failed to update display name", profileError);
         }
 
-        await setDoc(
-          doc(db, "users", credentials.user.uid),
-          {
-            uid: credentials.user.uid,
-            email: formData.email,
-            firstName: formData.firstName,
-            lastName: formData.lastName,
-            businessName: formData.businessName,
-            website: formData.website,
-            idealCustomers: formData.idealCustomers,
-            productDescription: formData.productDescription,
-            businessStage: formData.businessStage,
-            signupNumber: nextSignupNumber,
-            createdAt: serverTimestamp(),
-            updatedAt: serverTimestamp(),
-          },
-          { merge: true }
-        );
+        const idToken = await credentials.user.getIdToken();
+
+        await persistSignup(credentials.user.uid, nextSignupNumber, idToken);
 
         setCompletedSignupNumber(nextSignupNumber);
         setNextSignupNumber((current) => current + 1);
