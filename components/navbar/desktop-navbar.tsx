@@ -78,7 +78,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
           id={TYPEFORM_CONTACT_FORM_ID}
           data-tf-medium={`${TYPEFORM_CTA_MEDIUM}-navbar-desktop`}
         >
-          Book a launch call
+          Sign up for beta
         </Button>
       </div>
     </motion.div>

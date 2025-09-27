@@ -94,7 +94,7 @@ export const MobileNavbar = ({ navItems }: any) => {
                 setOpen(false);
               }}
             >
-              Book a launch call
+              Sign up for beta
             </Button>
           </div>
         </div>
