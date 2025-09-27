@@ -52,7 +52,8 @@ export const Hero = () => {
           A Digital Sales Force That Never Sleeps
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-muted dark:text-muted-dark max-w-3xl mx-auto relative z-10">
-          vatas finds, qualifies, nurtures, and closes deals for you across multiple channels so you can focus on making your product better
+          vatas finds, qualifies, nurtures, and closes deals for you across
+          multiple channels so you can focus on making your product better
         </Subheading>
         <FeaturedImages
           textClassName="lg:text-left text-center"
@@ -65,7 +66,7 @@ export const Hero = () => {
             as="a"
             href="/contact"
           >
-            <span>Launch your vata</span>{" "}
+            <span>Join the Beta</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </Button>
         </div>
