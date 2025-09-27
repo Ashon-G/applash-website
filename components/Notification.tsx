@@ -2,12 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/magicui/animated-list";
+import Image from "next/image";
 
 interface Item {
   name: string;
   description: string;
-  icon: string;
-  color: string;
+  imageSrc: string;
+  imageAlt: string;
   time: string;
 }
 
@@ -16,36 +17,35 @@ let notifications = [
     name: "Payment received",
     description: "$100 Added to account",
     time: "15m ago",
-
-    icon: "💸",
-    color: "#00C9A7",
+    imageSrc: "/images/vatas/square-blue.png",
+    imageAlt: "Blue square notification icon",
   },
   {
     name: "User signed up",
     description: "Magic UI",
     time: "10m ago",
-    icon: "👤",
-    color: "#FFB800",
+    imageSrc: "/images/vatas/square-red.png",
+    imageAlt: "Red square notification icon",
   },
   {
     name: "New message",
     description: "Magic UI",
     time: "5m ago",
-    icon: "💬",
-    color: "#FF3D71",
+    imageSrc: "/images/vatas/square-blue.png",
+    imageAlt: "Blue square notification icon",
   },
   {
     name: "New event",
     description: "Magic UI",
     time: "2m ago",
-    icon: "🗞️",
-    color: "#1E86FF",
+    imageSrc: "/images/vatas/square-red.png",
+    imageAlt: "Red square notification icon",
   },
 ];
 
 notifications = Array.from({ length: 10 }, () => notifications).flat();
 
-const Notification = ({ name, description, icon, color, time }: Item) => {
+const Notification = ({ name, description, imageSrc, imageAlt, time }: Item) => {
   return (
     <figure
       className={cn(
@@ -59,13 +59,14 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
       )}
     >
       <div className="flex flex-row items-center gap-3">
-        <div
-          className="flex size-10 items-center justify-center rounded-2xl"
-          style={{
-            backgroundColor: color,
-          }}
-        >
-          <span className="text-lg">{icon}</span>
+        <div className="relative flex size-10 items-center justify-center overflow-hidden rounded-2xl bg-white/10">
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={40}
+            height={40}
+            className="h-full w-full object-cover"
+          />
         </div>
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">

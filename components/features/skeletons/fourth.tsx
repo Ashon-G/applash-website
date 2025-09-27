@@ -16,11 +16,11 @@ export const SkeletonFour = () => {
         <CircleWithLine />
         <CircleWithLine />
       </div>
-      <Container className="mt-10 ml-4">Enable microphone</Container>
+      <Container className="mt-10 ml-4">Upload Playbooks</Container>
       <Container className="mt-4 ml-10 group-hover:border-secondary transition duration-200 group-hover:scale-[1.02]">
-        Enable camera
+        Link Website
       </Container>
-      <Container className="mt-4 ml-4">Enable geolocation</Container>
+      <Container className="mt-4 ml-4">Type Here</Container>
       <Cursor
         className="top-20 left-40 group-hover:left-32"
         textClassName="group-hover:text-secondary"
