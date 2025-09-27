@@ -1,17 +1,9 @@
 "use client";
-import { motion, stagger, animate, useAnimate } from "motion/react";
+import { animate } from "motion/react";
 import React, { useEffect, useState } from "react";
-import { IconContainer } from "../icon-container";
 import { cn } from "@/lib/utils";
-import { GoCopilot } from "react-icons/go";
 import { SparklesCore } from "@/components/ui/sparkles";
-import {
-  AppleLogo,
-  GeminiLogo,
-  MetaIcon,
-  AndroidLogo,
-  OpenAILogo,
-} from "@/components/icons/illustrations";
+import Image from "next/image";
 
 export const SkeletonThree = () => {
   const [animating, setAnimating] = useState(false);
@@ -73,19 +65,49 @@ export const SkeletonThree = () => {
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="h-8 w-8 circle-1">
-          <AppleLogo className="h-4 w-4 " />
+          <Image
+            src="/images/vatas/1.png"
+            alt="Vatas avatar 1"
+            width={64}
+            height={64}
+            className="h-4 w-4 object-contain"
+          />
         </Container>
         <Container className="h-12 w-12 circle-2">
-          <AppleLogo className="h-6 w-6 " />
+          <Image
+            src="/images/vatas/2.png"
+            alt="Vatas avatar 2"
+            width={64}
+            height={64}
+            className="h-6 w-6 object-contain"
+          />
         </Container>
         <Container className="circle-3">
-          <OpenAILogo className="h-8 w-8 " />
+          <Image
+            src="/images/vatas/3.png"
+            alt="Vatas avatar 3"
+            width={96}
+            height={96}
+            className="h-12 w-12 object-contain"
+          />
         </Container>
         <Container className="h-12 w-12 circle-4">
-          <AndroidLogo className="h-6 w-6 " />
+          <Image
+            src="/images/vatas/11.png"
+            alt="Vatas avatar 4"
+            width={64}
+            height={64}
+            className="h-6 w-6 object-contain"
+          />
         </Container>
         <Container className="h-8 w-8 circle-5">
-          <AndroidLogo className="h-4 w-4 " />
+          <Image
+            src="/images/vatas/22.png"
+            alt="Vatas avatar 5"
+            width={64}
+            height={64}
+            className="h-4 w-4 object-contain"
+          />
         </Container>
       </div>
 
