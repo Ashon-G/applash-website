@@ -1,4 +1,3 @@
-import { useRouter } from "next/navigation";
 import { BlogWithSlug } from "@/lib/blog";
 import { IconArrowLeft } from "@tabler/icons-react";
 import { Container } from "./container";

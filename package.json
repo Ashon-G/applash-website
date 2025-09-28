@@ -26,7 +26,6 @@
     "@types/mdx": "^2.0.13",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
-    "fast-glob": "^3.3.2",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.395.0",
     "mini-svg-data-uri": "^1.4.4",
