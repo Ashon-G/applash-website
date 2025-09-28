@@ -12,6 +12,7 @@ import { Subheading } from "@/components/subheading";
 import { Testimonials } from "@/components/testimonials";
 import { TestimonialsSlider } from "@/components/testimonials/slider";
 import { Tools } from "@/components/tools";
+import { OnboardingHighlight } from "@/components/onboarding-highlight";
 import { IconReceiptFilled } from "@tabler/icons-react";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Tools />
+      <OnboardingHighlight />
       <Testimonials />
       <div className="py-20 sm:py-40">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
