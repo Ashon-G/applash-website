@@ -24,16 +24,16 @@ export const Features = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Everything your AI sellers need to win deals</Heading>
+        <Heading className="pt-4">What the vatas handle day to day</Heading>
         <Subheading>
-          Vatas work every social channel, qualify fit, and only tap you when a human touch is needed.
+          They plug into your channels, qualify prospects, and only escalate when you need to step in.
         </Subheading>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
           <Card className="lg:col-span-2">
-            <CardTitle>Connect every social account</CardTitle>
+            <CardTitle>Connect your channels</CardTitle>
             <CardDescription>
-              Link LinkedIn, Reddit, Slack, email, and more so vatas jump into warm conversations right away.
+              Link LinkedIn, Reddit, Slack, email, and other sources so vatas join ongoing conversations immediately.
             </CardDescription>
             <CardSkeletonContainer>
               <SkeletonOne />
@@ -43,18 +43,18 @@ export const Features = () => {
             <CardSkeletonContainer className="max-w-[16rem] mx-auto">
               <SkeletonTwo />
             </CardSkeletonContainer>
-            <CardTitle>Escalate when stuck</CardTitle>
+            <CardTitle>Escalate when they need help</CardTitle>
             <CardDescription>
-              Vatas ping you for context once, save the answer, and handle the next ask on their own.
+              When a vata hits a blocker it pings you once, saves the response, and applies it next time.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonThree />
             </CardSkeletonContainer>
-            <CardTitle>Qualification playbooks</CardTitle>
+            <CardTitle>Qualification rules</CardTitle>
             <CardDescription>
-              Set ICP rules and scoring so only sales-ready leads ever reach your pipeline.
+              Set ICP rules and scoring so only sales-ready leads enter your pipeline.
             </CardDescription>
           </Card>
           <Card>
@@ -64,18 +64,18 @@ export const Features = () => {
             >
               <SkeletonFour />
             </CardSkeletonContainer>
-            <CardTitle>Knowledge-fed conversations</CardTitle>
+            <CardTitle>Knowledge-fed outreach</CardTitle>
             <CardDescription>
-              Sync docs, call recordings, and analytics so every outreach stays on-message and current.
+              Sync docs, call recordings, and analytics so every message matches your latest positioning.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonFive />
             </CardSkeletonContainer>
-            <CardTitle>Pay-for-results billing</CardTitle>
+            <CardTitle>Pay for outcomes</CardTitle>
             <CardDescription>
-              Get one monthly invoice tied to qualified deals, starting at $50 per lead.
+              Receive one monthly invoice tied to qualified deals, starting at $50 per lead.
             </CardDescription>
           </Card>
         </div>

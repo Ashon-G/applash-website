@@ -28,8 +28,7 @@ export default function Home() {
         </FeatureIconContainer>
         <Heading className="pt-4">Results-based pricing</Heading>
         <Subheading>
-          Pay only for the qualified opportunities vatas close, with a flat
-          subscription once you pass twenty wins a month.
+          Pay per qualified opportunity. After twenty wins in a month, switch to the flat subscription.
         </Subheading>
         <PricingGrid />
         <FAQs />
