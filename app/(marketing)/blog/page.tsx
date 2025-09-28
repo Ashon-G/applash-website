@@ -22,6 +22,8 @@ export const metadata: Metadata = {
 
 export default async function ArticlesIndex() {
   let blogs = await getAllBlogs();
+  let featuredBlogs = blogs.slice(0, 3);
+  let additionalBlogs = blogs.slice(3, 6);
 
   return (
     <div className="relative overflow-hidden py-20 md:py-0">
@@ -38,45 +40,53 @@ export default async function ArticlesIndex() {
           </Subheading>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full relative z-20">
-          {blogs.slice(0, 3).map((blog, index) => (
-            <BlogCard blog={blog} key={blog.title + index} />
-          ))}
-        </div>
-
-        <div className="w-full py-20">
-          <p className="text-2xl font-bold text-white mb-10">More Posts</p>
-
-          <div className="divide-y divide-neutral-800">
-            {blogs.slice(3, 6).map((blog, index) => (
-              <Link
-                href={`/blog/${blog.slug}`}
-                key={blog.slug + index}
-                className="flex md:flex-row flex-col items-start justify-between md:items-center group py-4"
-              >
-                <div>
-                  <p className="text-neutral-300 text-lg font-medium group-hover:text-white transition duration-200">
-                    {blog.title}
-                  </p>
-                  <p className="text-neutral-300 text-sm mt-2 max-w-xl group-hover:text-white transition duration-200">
-                    {truncate(blog.description, 80)}
-                  </p>
-
-                  <p className="text-neutral-300 text-sm mt-2 max-w-xl group-hover:text-white transition duration-200">
-                    {format(new Date(blog.date), "MMMM dd, yyyy")}
-                  </p>
-                </div>
-                <Image
-                  src={blog.author.src}
-                  alt={blog.author.name}
-                  width={40}
-                  height={40}
-                  className="rounded-full md:h-10 md:w-10 h-6 w-6 mt-4 md:mt-0 object-cover"
-                />
-              </Link>
+        {featuredBlogs.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full relative z-20">
+            {featuredBlogs.map((blog, index) => (
+              <BlogCard blog={blog} key={blog.title + index} />
             ))}
           </div>
-        </div>
+        ) : (
+          <p className="text-muted text-center w-full relative z-20">
+            No blog posts available right now. Please check back soon.
+          </p>
+        )}
+
+        {additionalBlogs.length > 0 && (
+          <div className="w-full py-20">
+            <p className="text-2xl font-bold text-white mb-10">More Posts</p>
+
+            <div className="divide-y divide-neutral-800">
+              {additionalBlogs.map((blog, index) => (
+                <Link
+                  href={`/blog/${blog.slug}`}
+                  key={blog.slug + index}
+                  className="flex md:flex-row flex-col items-start justify-between md:items-center group py-4"
+                >
+                  <div>
+                    <p className="text-neutral-300 text-lg font-medium group-hover:text-white transition duration-200">
+                      {blog.title}
+                    </p>
+                    <p className="text-neutral-300 text-sm mt-2 max-w-xl group-hover:text-white transition duration-200">
+                      {truncate(blog.description, 80)}
+                    </p>
+
+                    <p className="text-neutral-300 text-sm mt-2 max-w-xl group-hover:text-white transition duration-200">
+                      {format(new Date(blog.date), "MMMM dd, yyyy")}
+                    </p>
+                  </div>
+                  <Image
+                    src={blog.author.src}
+                    alt={blog.author.name}
+                    width={40}
+                    height={40}
+                    className="rounded-full md:h-10 md:w-10 h-6 w-6 mt-4 md:mt-0 object-cover"
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </Container>
     </div>
   );

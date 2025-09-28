@@ -10,6 +10,8 @@ const nextConfig = {
       { hostname: "images.unsplash.com" },
       { hostname: "i.pravatar.cc" },
       { hostname: "cdn.prod.website-files.com" },
+      { hostname: "imagedelivery.net" },
+      { hostname: "avatars.githubusercontent.com" },
     ],
   },
   pageExtensions: ["ts", "tsx", "mdx"],
