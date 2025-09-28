@@ -11,6 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        heading: ["var(--font-paygeon)", "var(--font-inter)", "sans-serif"],
+      },
       colors: {
         charcoal: "#08090A",
         secondary: "#39C3EF",

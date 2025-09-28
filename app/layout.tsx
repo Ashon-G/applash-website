@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { ViewTransitions } from "next-view-transitions";
 import type { Viewport } from "next";
@@ -27,6 +28,13 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
+});
+
+const paygeon = localFont({
+  src: "../public/fonts/Paygeon.otf",
+  display: "swap",
+  variable: "--font-paygeon",
 });
 
 export default function RootLayout({
@@ -39,8 +47,9 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={cn(
-            inter.className,
-            "bg-charcoal antialiased h-full w-full"
+            inter.variable,
+            paygeon.variable,
+            "bg-charcoal antialiased h-full w-full font-sans"
           )}
         >
           <NavBar />

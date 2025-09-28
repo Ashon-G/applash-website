@@ -17,6 +17,19 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-heading {
+    font-family: var(--font-paygeon), var(--font-inter), sans-serif;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
