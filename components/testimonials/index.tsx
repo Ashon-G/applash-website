@@ -16,9 +16,9 @@ export const Testimonials = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <TbLocationBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Loved by revenue teams worldwide</Heading>
+        <Heading className="pt-4">Teams using vatas to keep deals moving</Heading>
         <Subheading>
-          Vatas keep go-to-market teams closing while AI handles the grind.
+          Real revenue leaders sharing how autonomous sellers free them up to close.
         </Subheading>
       </div>
 

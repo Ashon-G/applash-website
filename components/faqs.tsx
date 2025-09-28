@@ -8,25 +8,25 @@ const questions = [
     id: 1,
     title: "What is Vatas?",
     description:
-      "Vatas is a 24/7 AI sales force that hunts, qualifies, and closes leads across social networks.",
+      "Vatas are autonomous AI sellers that monitor your channels, qualify prospects, and pass meetings to your team.",
   },
   {
     id: 2,
     title: "How do vatas find new leads?",
     description:
-      "Each vata crawls LinkedIn, Reddit, and your inboxes to spot buying signals and book meetings.",
+      "Each vata watches LinkedIn, Reddit, and your inboxes to spot buying signals and book meetings.",
   },
   {
     id: 3,
     title: "What data should I connect?",
     description:
-      "Link your social profiles, storage, analytics, and knowledge bases so vatas learn your business and ideal customers.",
+      "Link your social profiles, storage, analytics, and knowledge bases so vatas understand your business and ideal customers.",
   },
   {
     id: 4,
     title: "How do vatas learn our voice?",
     description:
-      "Upload assets to the knowledge hub, tag personas, and vatas adapt outreach with every conversation.",
+      "Upload assets to the knowledge hub, tag personas, and the vatas adjust outreach with each new conversation.",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const questions = [
     id: 8,
     title: "How does pricing work?",
     description:
-      "Pay $50 per qualified lead monthly, or choose the $399/month subscription past twenty wins.",
+      "Pay $50 per qualified lead each month, or move to the $399/month subscription after twenty wins.",
   },
   {
     id: 9,

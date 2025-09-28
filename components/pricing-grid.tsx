@@ -17,24 +17,24 @@ export const PricingGrid = () => {
   const tiers = [
     {
       title: "Pay for Results",
-      description: "Only pay when a vata closes a qualified lead",
+      description: "You pay only when a vata delivers a qualified lead",
       priceText: "$50 per qualified lead",
       features: [
         "No platform fees or retainers",
         "Verified buyer identity, intent, and contact info",
-        "Inbox visibility for every outreach and escalation",
-        "Knowledge hub training included",
+        "Full inbox visibility for every outreach and escalation",
+        "Knowledge hub setup included",
       ],
       ctaText: "Talk to sales",
     },
     {
       title: "Growth Subscription",
-      description: "Predictable pricing for teams closing 20+ new deals each month",
+      description: "Flat rate once you consistently close twenty qualified deals a month",
       priceText: "$399/month",
       features: [
         "Includes the first 20 qualified leads each month",
         "$45 per additional lead after your included quota",
-        "Dedicated revenue strategist and weekly playbook reviews",
+        "Weekly check-ins with a revenue strategist",
         "Pipeline analytics, CRM syncs, and SLA monitoring",
       ],
       featured: true,
@@ -42,7 +42,7 @@ export const PricingGrid = () => {
     },
     {
       title: "Enterprise Revenue Desk",
-      description: "Custom automations, routing, and compliance for large teams",
+      description: "Custom automations, routing, and compliance for larger teams",
       priceText: "Custom pricing",
       features: [
         "Multi-brand knowledge hubs and territory controls",
@@ -54,7 +54,7 @@ export const PricingGrid = () => {
     },
     {
       title: "Partner Program",
-      description: "For agencies and consultants who want to resell vatas",
+      description: "For agencies and consultants who resell vatas to their clients",
       priceText: "Apply to join",
       features: [
         "Revenue share on every lead closed",

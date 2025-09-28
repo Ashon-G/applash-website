@@ -19,9 +19,9 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconSocial className="h-8 w-8 text-secondary" />,
-      title: "Connect your social graph",
+      title: "Link the places you sell",
       description:
-        "Authorize LinkedIn, Reddit, X, Slack, and email so vatas surface warm conversations automatically.",
+        "Authorize LinkedIn, Reddit, X, Slack, and email so vatas surface active conversations without you hunting for them.",
       content: (
         <ImageContainer>
           <Iphone videoSrc="/videos/social.mp4" scale="sm" />
@@ -30,9 +30,9 @@ export const Tools = () => {
     },
     {
       icon: <IconMailForward className="h-8 w-8 text-secondary" />,
-      title: "Live inbox oversight",
+      title: "Review the inbox in real time",
       description:
-        "Review outreach, approve replies, and jump in the moment a vata needs you.",
+        "Read every outreach, approve replies, and jump in the moment a vata flags a thread.",
       content: (
         <ImageContainer>
           <Iphone imageSrc="/images/inbox.png" scale="md" />
@@ -41,9 +41,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Knowledge hub sync",
+      title: "Sync your knowledge base",
       description:
-        "Feed recordings, docs, and analytics so vatas learn your product, objections, and differentiators.",
+        "Upload recordings, docs, and analytics so vatas learn your product, objections, and differentiators.",
       content: (
         <ImageContainer>
           <Iphone videoSrc="/videos/hub.mp4" scale="sm" />
@@ -52,9 +52,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTool className="h-8 w-8 text-secondary" />,
-      title: "Revenue analytics",
+      title: "Track the numbers",
       description:
-        "Track sourced pipeline, win rates, and response speed across every vata from one dashboard.",
+        "Watch sourced pipeline, win rates, and response times for every vata from one dashboard.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -111,12 +111,9 @@ export const Tools = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconTool className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="mt-4">
-          Every workflow in one revenue command center
-        </Heading>
+        <Heading className="mt-4">One place to run the vatas</Heading>
         <Subheading>
-          Launch vatas, train them once, stay in the inbox, and track pipeline
-          impact without juggling tools.
+          Launch them, train them once, stay on top of the inbox, and watch the pipeline without switching tools.
         </Subheading>
       </div>
       <StickyScroll content={content} />
