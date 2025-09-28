@@ -43,18 +43,18 @@ export const Features = () => {
             <CardSkeletonContainer className="max-w-[16rem] mx-auto">
               <SkeletonTwo />
             </CardSkeletonContainer>
-            <CardTitle>Qualification playbooks</CardTitle>
+            <CardTitle>Escalate when stuck</CardTitle>
             <CardDescription>
-              Set ICP rules and scoring so only sales-ready leads ever reach your pipeline.
+              Vatas ping you for context once, save the answer, and handle the next ask on their own.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonThree />
             </CardSkeletonContainer>
-            <CardTitle>Escalate when stuck</CardTitle>
+            <CardTitle>Qualification playbooks</CardTitle>
             <CardDescription>
-              Vatas ping you for context once, save the answer, and handle the next ask on their own.
+              Set ICP rules and scoring so only sales-ready leads ever reach your pipeline.
             </CardDescription>
           </Card>
           <Card>

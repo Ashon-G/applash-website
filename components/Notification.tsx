@@ -14,32 +14,32 @@ interface Item {
 
 let notifications = [
   {
-    name: "Payment received",
-    description: "$100 Added to account",
-    time: "15m ago",
+    name: "Needs context",
+    description: "Ava paused: prospect asked about security review steps.",
+    time: "Just now",
     imageSrc: "/images/vatas/square-blue.png",
-    imageAlt: "Blue square notification icon",
+    imageAlt: "Blue square escalation icon",
   },
   {
-    name: "User signed up",
-    description: "Magic UI",
-    time: "10m ago",
+    name: "You replied",
+    description: "Shared the SOC 2 answer and when to involve legal.",
+    time: "1m ago",
     imageSrc: "/images/vatas/square-red.png",
-    imageAlt: "Red square notification icon",
+    imageAlt: "Red square escalation icon",
   },
   {
-    name: "New message",
-    description: "Magic UI",
-    time: "5m ago",
+    name: "Saved for next time",
+    description: "Vata stored your guidance for similar asks.",
+    time: "30m ago",
     imageSrc: "/images/vatas/square-blue.png",
-    imageAlt: "Blue square notification icon",
+    imageAlt: "Blue square escalation icon",
   },
   {
-    name: "New event",
-    description: "Magic UI",
-    time: "2m ago",
+    name: "Conversation resumed",
+    description: "Prospect got their answer. No repeat pings needed.",
+    time: "45m ago",
     imageSrc: "/images/vatas/square-red.png",
-    imageAlt: "Red square notification icon",
+    imageAlt: "Red square escalation icon",
   },
 ];
 
