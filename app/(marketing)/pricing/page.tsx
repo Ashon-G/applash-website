@@ -12,7 +12,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing | Vatas",
   description:
-    "Only pay when Vatas deliver qualified leads, or lock in a subscription once you consistently close 20+ new deals a month.",
+    "Only pay $5 when Vatas deliver qualified leads, or lock in a $399/year subscription once you consistently close 20+ new deals a month.",
   openGraph: {
     images: ["/banner.png"],
   },

@@ -50,7 +50,7 @@ const questions = [
     id: 8,
     title: "How does pricing work?",
     description:
-      "Pay $50 per qualified lead monthly, or choose the $399/month subscription past twenty wins.",
+      "Pay $5 per qualified lead, or choose the $399/year subscription once you're scaling past twenty wins.",
   },
   {
     id: 9,
