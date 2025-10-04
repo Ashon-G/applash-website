@@ -75,7 +75,7 @@ export const Features = () => {
             </CardSkeletonContainer>
             <CardTitle>Pay-for-results billing</CardTitle>
             <CardDescription>
-              Get one monthly invoice tied to qualified deals, starting at $50 per lead.
+              Get one invoice tied to qualified deals, starting at $5 per lead.
             </CardDescription>
           </Card>
         </div>

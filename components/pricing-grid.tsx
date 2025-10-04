@@ -18,7 +18,7 @@ export const PricingGrid = () => {
     {
       title: "Pay for Results",
       description: "Only pay when a vata closes a qualified lead",
-      priceText: "$50 per qualified lead",
+      priceText: "$5 per qualified lead",
       features: [
         "No platform fees or retainers",
         "Verified buyer identity, intent, and contact info",
@@ -30,10 +30,10 @@ export const PricingGrid = () => {
     {
       title: "Growth Subscription",
       description: "Predictable pricing for teams closing 20+ new deals each month",
-      priceText: "$399/month",
+      priceText: "$399/year",
       features: [
-        "Includes the first 20 qualified leads each month",
-        "$45 per additional lead after your included quota",
+        "Includes the first 120 qualified leads each year",
+        "$5 per additional lead after your included quota",
         "Dedicated revenue strategist and weekly playbook reviews",
         "Pipeline analytics, CRM syncs, and SLA monitoring",
       ],
