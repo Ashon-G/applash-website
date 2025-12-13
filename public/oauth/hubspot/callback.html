@@ -21,6 +21,7 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             backdrop-filter: blur(10px);
+            max-width: 400px;
         }
         .spinner {
             border: 4px solid rgba(255, 255, 255, 0.3);
@@ -35,96 +36,116 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 16px;
-            opacity: 0.9;
-        }
+        h1 { font-size: 24px; margin-bottom: 10px; }
+        p { font-size: 16px; opacity: 0.9; }
         .error {
             background: rgba(239, 68, 68, 0.2);
             padding: 20px;
             border-radius: 10px;
             margin-top: 20px;
         }
+        .success {
+            background: rgba(34, 197, 94, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
     </style>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Connecting to HubSpot</h1>
-        <div class="spinner"></div>
-        <p id="status">Redirecting back to Tava...</p>
+        <div class="spinner" id="spinner"></div>
+        <p id="status">Processing authorization...</p>
         <div id="error" class="error" style="display: none;"></div>
+        <div id="success" class="success" style="display: none;"></div>
     </div>
 
     <script>
-        (function() {
-            try {
-                // Get the current URL parameters
-                const urlParams = new URLSearchParams(window.location.search);
+        // Firebase config - same as your app
+        const firebaseConfig = {
+            apiKey: "AIzaSyBLMPP-hVQSwxhRsB3ROA-8mJQbINJVgYg",
+            authDomain: "tava-e5e74.firebaseapp.com",
+            projectId: "tava-e5e74",
+            storageBucket: "tava-e5e74.firebasestorage.app",
+            messagingSenderId: "904315710289",
+            appId: "1:904315710289:web:e9e5f3d2c2e6a8b7c8d9e0"
+        };
 
-                // Check for OAuth code or error
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        async function processOAuth() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
                 const code = urlParams.get('code');
+                const state = urlParams.get('state');
                 const error = urlParams.get('error');
                 const errorDescription = urlParams.get('error_description');
 
                 if (error) {
-                    // Show error
-                    document.getElementById('status').style.display = 'none';
-                    document.querySelector('.spinner').style.display = 'none';
-                    const errorDiv = document.getElementById('error');
-                    errorDiv.style.display = 'block';
-                    errorDiv.innerHTML = `
-                        <h3>Authorization Error</h3>
-                        <p><strong>${error}</strong></p>
-                        <p>${errorDescription || 'Please try again'}</p>
-                    `;
-
-                    // Try to redirect back anyway after 3 seconds
-                    setTimeout(() => {
-                        window.location.href = 'tava://oauth-callback?error=' + encodeURIComponent(error);
-                    }, 3000);
+                    showError(error, errorDescription);
                     return;
                 }
 
-                if (code) {
-                    // Success! Redirect to app with the authorization code
-                    const deepLink = 'tava://oauth-callback?' + urlParams.toString();
-
-                    console.log('Redirecting to app with code:', code.substring(0, 10) + '...');
-                    console.log('Deep link:', deepLink);
-
-                    // Attempt to open the app
-                    window.location.href = deepLink;
-
-                    // Show success message
-                    document.getElementById('status').textContent = 'Success! Opening Tava...';
-
-                    // Fallback: If the app doesn't open, show instructions
-                    setTimeout(() => {
-                        document.getElementById('status').innerHTML =
-                            'If the app didn\'t open, please open Tava manually.<br>' +
-                            '<small>You can close this page.</small>';
-                    }, 2000);
-                } else {
-                    // No code or error - something went wrong
-                    throw new Error('No authorization code received from HubSpot');
+                if (!code) {
+                    showError('No Code', 'No authorization code received from HubSpot');
+                    return;
                 }
+
+                if (!state) {
+                    showError('No State', 'Missing state parameter. Please try connecting again.');
+                    return;
+                }
+
+                document.getElementById('status').textContent = 'Saving authorization...';
+
+                // Update the pending OAuth document in Firestore with the code
+                await db.collection('oauth_pending').doc(state).update({
+                    status: 'completed',
+                    code: code,
+                    completedAt: firebase.firestore.FieldValue.serverTimestamp()
+                });
+
+                showSuccess();
+
             } catch (err) {
-                console.error('Redirect error:', err);
-                document.getElementById('status').style.display = 'none';
-                document.querySelector('.spinner').style.display = 'none';
-                const errorDiv = document.getElementById('error');
-                errorDiv.style.display = 'block';
-                errorDiv.innerHTML = `
-                    <h3>Unexpected Error</h3>
-                    <p>${err.message}</p>
-                    <p><small>Please close this page and try again in the app.</small></p>
-                `;
+                console.error('OAuth processing error:', err);
+                showError('Error', err.message || 'Failed to process authorization. Please try again.');
             }
-        })();
+        }
+
+        function showError(title, description) {
+            document.getElementById('spinner').style.display = 'none';
+            document.getElementById('status').style.display = 'none';
+            const errorDiv = document.getElementById('error');
+            errorDiv.style.display = 'block';
+            errorDiv.innerHTML = `
+                <h3>Authorization Error</h3>
+                <p><strong>${title}</strong></p>
+                <p>${description || 'Please try again'}</p>
+                <p style="margin-top: 15px; font-size: 14px;">Close this window and return to the app.</p>
+            `;
+        }
+
+        function showSuccess() {
+            document.getElementById('spinner').style.display = 'none';
+            document.getElementById('status').style.display = 'none';
+            const successDiv = document.getElementById('success');
+            successDiv.style.display = 'block';
+            successDiv.innerHTML = `
+                <h3>✓ Authorization Successful!</h3>
+                <p style="margin-top: 10px;">You can now close this window.</p>
+                <p style="margin-top: 15px; font-size: 14px; opacity: 0.8;">The app will automatically complete the connection.</p>
+            `;
+        }
+
+        // Run on page load
+        processOAuth();
     </script>
 </body>
 </html>
